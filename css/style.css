@@ -1,0 +1,90 @@
+a {
+    color: #39f;
+}
+
+body {
+    color: rgb(22, 24, 29);
+    font: 400 1em Roboto, 'Courier New', Courier, mono;
+    text-align: center;
+}
+
+#layout {
+    width: 100%;
+}
+
+#header > .container,
+#content > .container {
+    width: 920px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#header {
+    background-color: #39f;
+    padding: .5em;
+}
+
+#header .identity {
+    color: white;
+    font-size: 1em;
+}
+
+#content header {
+    margin-top: 1.5em;
+}
+
+#content .headline {
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1em;
+}
+
+#content .products {
+    width: 100%;
+    margin-top: 1.5em;
+    overflow: hidden;
+}
+
+#content .product {
+    width: 32%;
+    margin-left: 2%;
+    border: 1px dashed lightgray;
+    padding: 1em;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+#content .product:first-child {
+    margin-left: 0;
+}
+
+#content .product .container {
+    width: 5em;
+    height: 5em;
+    border: 2px solid;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#content .product .fa {
+    margin-top: .75em;
+    font-size: 2em;
+}
+
+#content .product .description {
+    width: 100%;
+    margin-top: 1.5em;
+    padding: .5em;
+    font-size: .75em;
+    text-align: left;
+}
+
+#content .product .name {
+    margin-top: 1.5em;
+    font-size: .9375em;
+    font-weight: bold;
+    line-height: 1em;
+}
