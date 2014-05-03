@@ -1,0 +1,20 @@
+{
+  "name": "rxgx.com",
+  "version": "0.0.1",
+  "homepage": "https://rxgx.github.io/rxgx.com/",
+  "authors": [
+    "Ryan Gasparini <ryan@rxgx.com>"
+  ],
+  "description": "RXGX is Ryan Gasparini's Online Portfolio",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
