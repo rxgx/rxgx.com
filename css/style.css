@@ -48,13 +48,15 @@ body {
     padding: .5em;
 }
 
-#header .identity {
+#header .identity a {
     color: white;
     font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
-#content header {
+
+#content .container header {
     margin-top: 1.5em;
 }
 
