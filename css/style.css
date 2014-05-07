@@ -94,30 +94,43 @@ body {
 #content .product .container {
     width: 5em;
     height: 5em;
-    border: .1875em solid;
+    border: 3px solid lightgray;
     margin: 0 auto;
+    background-color: white;
     border-radius: 50%;
     text-align: center;
 }
 
+#content .product .fa {
+    margin-top: .375em;
+    font-size: 3em;
+}
+
 #content .product .icon {
-    width: 3em;
-    height: 3em;
-    margin-top: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 1.25em;
     display: inline-block;
     text-align: left;
 }
 
+#content .product:hover {
+    background-color: whitesmoke;
+}
+
+#content .product:hover .container {
+    border-color: inherit;
+}
+
 #content .product:hover .icon {
-    width: 3.5em;
-    height: 3.5em;
-    margin-top: .75em;
+    width: 3em;
+    height: 3em;
+    margin-top: 1em;
 }
 
 #content .product .description {
     width: 100%;
     margin-top: 1.5em;
-    padding: .5em;
     font-size: .8125em;
     text-align: left;
 }
