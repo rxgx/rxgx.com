@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>RXGX&mdash;Ryan Gasparini&rsquo;s Resume</title>
     <meta charset="utf-8">
@@ -29,6 +29,7 @@
     <section class="focus">
         <h1 class="heading">Career Focus</h1>
         <p>
+            To be a dynamic guy for the static quo.
             To lead and collaborate in the design and development of ambitious
             Web-based products and services with a team where individuals value agile
             practices, usability, and personal evolution.
@@ -40,7 +41,7 @@
         <ul class="products four">
             <li class="product">
                 <div class="container">
-                    <i class="fa fa-pencil"></i>
+                    <img class="icon" src="./svg/design.svg">
                 </div>
                 <p class="description">
                     <strong>User experience</strong>, interface design, and functional prototypes. Start with sketches; finish with flexible <span class="hashtag">HTML</span> &amp; <span class="hashtag">CSS</span> layouts.
@@ -48,7 +49,7 @@
             </li>
             <li class="product">
                 <div class="container">
-                    <i class="fa fa-code"></i>
+                    <img class="icon" src="./svg/browser.svg">
                 </div>
                 <p class="description">
                     <strong>JavaScript application development</strong> with modern frameworks like <span class="hashtag">EmberJS</span>, <span class="hashtag">AngularJS</span>, and <span class="hashtag">BackboneJS</span>.
@@ -56,7 +57,7 @@
             </li>
             <li class="product">
                 <div class="container">
-                    <i class="fa fa-wrench"></i>
+                    <img class="icon" src="./svg/deploy.svg">
                 </div>
                 <p class="description">
                     Built new and scaled existing <strong>Ruby on Rails applications</strong>, including Capistrano and Vagrant deployment and Rspec tests.
@@ -64,7 +65,7 @@
             </li>
             <li class="product">
                 <div class="container">
-                    <i class="fa fa-laptop"></i>
+                    <img class="icon" src="./svg/quirks.svg">
                 </div>
                 <p class="description">
                     Internet <strong>browser quirks and bugs</strong> such as the box model and CORS in old verions of IE; not to mention prefixes for CSS and HTML5 APIs.
@@ -75,10 +76,30 @@
 
     <section class="skill-list">
         <h1 class="heading">Secondary Attributes</h1>
-        <ul>
-            <li>Relational database design and migration</li>
-            <li>Managing Git repositories: branch, rebase, merge, hooks</li>
-            <li>Following and leading in agile methodologies: <span class="hashtag">#Scrum</span>, <span class="hashtag">#XP</span>, <span class="hashtag">#Kanban</a></li>
+        <ul class="products">
+            <li class="product">
+                <div class="container">
+                    <img class="fa" src="data:image/png;base64,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" width="32" height="32">
+                </div>
+                <p class="description">
+                    Relational database design and migration
+                </p>
+            <li class="product">
+                <div class="container">
+                    <i class="fa fa-code"></i>
+                </div>
+                <p class="description">
+                    Managing Git repositories: branch, rebase, merge, hooks
+                </p>
+            </li>
+            <li class="product">
+                <div class="container">
+                    <i class="fa fa-code"></i>
+                </div>
+                <p class="description">
+                    Following and leading in agile methodologies: <span class="hashtag">#Scrum</span>, <span class="hashtag">#XP</span>, <span class="hashtag">#Kanban</a>
+                </p>
+            </li>
         </ul>
     </section>
 
@@ -128,7 +149,7 @@
 
 <footer id="footer">
     <div class="container">
-        <p class="copyright">&copy;2014 Ryan Gasparini / d.b.a. RXGX, LLC</p>
+        <p class="copyright">&copy;2014 Ryan Gasparini / d.b.a. RXGX, LLC / Time is but a flat circle</p>
     </div>
 </footer>
 
