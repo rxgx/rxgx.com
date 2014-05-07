@@ -32,8 +32,11 @@ body {
 #header  > .container,
 #content > .container,
 #footer  > .container {
-    width: 920px;
+    max-width: 928px;
+    min-width: 768px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: auto;
     text-align: left;
 }
 
