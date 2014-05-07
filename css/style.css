@@ -29,13 +29,18 @@ body {
     color: rgb(2, 5, 7);
 }
 
+#header,
+#content,
+#footer {
+    padding: 0 20px;
+}
+
 #header  > .container,
 #content > .container,
 #footer  > .container {
     max-width: 928px;
-    min-width: 768px;
+    min-width: 728px;
     margin: 0 auto;
-    padding: 0 20px;
     box-sizing: auto;
     text-align: left;
 }
