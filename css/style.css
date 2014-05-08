@@ -15,7 +15,7 @@ a {
 
 body {
     color: rgb(22, 24, 29);
-    font: 400 1em Roboto, 'Courier New', Courier, mono;
+    font: 400 1em Roboto;
     text-align: center;
 }
 
@@ -53,13 +53,22 @@ body {
     padding: .5em;
 }
 
-#header .identity a {
+#header a {
     color: white;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+#header .identity,
+#header .menu {
+    display: inline-block;
+}
+
+#header .menu {
+    float: right;
+    font-size: .875em;
+}
 
 #content .container header {
     margin-top: 1.5em;
