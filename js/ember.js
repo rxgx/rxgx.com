@@ -1,20 +1,46 @@
 var App;
 
 (function application() {
+    'use strict';
 
     App = Ember.Application.create({
-        rootElement: '#ApplicationView'
+        rootElement: '#layout'
     });
 
-    App.router.map(function() {
+    App.Router.map(function() {
         this.route('about');
         this.route('resume');
     });
 
+    App.AboutRoute = Ember.Route.extend({
+        model: function(params) {
+            console.log('about route', params);
+            //return this.store('page', 'about');
+        }
+    });
+
+    App.ResumeRoute = Ember.Route.extend({
+        model: function(params) {
+            console.log('resume route', params);
+            //return this.store('page', 'resume');
+        }
+    })
+})();
+
+
+
+(function components() {
+    'use strict';
+
+    App.PageHeaderComponent = Ember.Component.extend({
+        elementId: 'header',
+        tagName: 'header'
+    });
 })();
 
 
 (function models() {
+    'use strict';
 
     var attr = DS.attr;
 
@@ -26,7 +52,7 @@ var App;
     });
 
     App.Position = DS.Model.extend({
-        title: attr('string')
+        title: attr('string'),
         company: attr('string'),
         startDate: attr('date'),
         endDate: attr('date'),
@@ -44,5 +70,4 @@ var App;
         alias: attr('string'),
         dsecription: attr('string')
     });
-
 })();
