@@ -9,6 +9,7 @@ var App;
 
     App.Router.map(function() {
         this.route('about');
+        this.route('contact');
         this.route('resume');
     });
 
@@ -36,6 +37,16 @@ var App;
         elementId: 'header',
         tagName: 'header'
     });
+})();
+
+
+(function views() {
+    'use strict';
+    
+    App.View = Ember.View.extend({
+        className: 'container'
+    });
+
 })();
 
 
