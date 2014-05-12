@@ -14,7 +14,8 @@ a {
 }
 
 body {
-    color: rgb(22, 24, 29);
+    background-color: rgb(240, 243, 250);
+    color: rgb(22, 23, 30);
     font: 400 1em Roboto;
     text-align: center;
 }
@@ -50,12 +51,11 @@ body {
 
 #header {
     background-color: #39f;
-    padding: .5em;
+    padding: 1.5em .5em .5em;
 }
 
 #header a {
     color: white;
-    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -65,10 +65,19 @@ body {
     display: inline-block;
 }
 
+#header .identity {
+    font-weight: 700;
+}
+
 #header .menu {
     float: right;
+}
+
+#header .menu a {
     font-size: .875em;
 }
+
+
 
 #content .container header {
     margin-top: 1.5em;
@@ -82,7 +91,8 @@ body {
 }
 
 #content section > .heading {
-    font-weight: 700;
+    font: normal 1.5em Georgia;
+    font-weight: normal;
     margin-top: 1.5em;
 }
 
@@ -115,7 +125,7 @@ body {
     height: 5em;
     border: 3px solid lightgray;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
     text-align: center;
 }
@@ -133,8 +143,8 @@ body {
     text-align: left;
 }
 
-#content .product:hover {
-    background-color: whitesmoke;
+#content .product:hover .container {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #content .product:hover .container {
@@ -164,17 +174,16 @@ body {
 
 
 #footer {
-    margin: 3em 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 #footer .container {
-    border-top: 2px solid lightgray;
-    text-transform: uppercase;
+    //border-top: 2px solid lightgray;
 }
 
 #footer .copyright {
     margin-top: 1em;
     color: rgb(122, 125, 127);
-    font-size: .6875em;
+    font-size: .75em;
     font-weight: 700;
 }
