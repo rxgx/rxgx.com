@@ -13,7 +13,6 @@
 
 <div id="layout"></div>
 
-
 <script type="text/x-handlebars">
     <header id="header">
         <div class="container">
@@ -40,7 +39,11 @@
     <footer id="footer">
         <div class="container">
             <p class="copyright">
-                &copy;2014 Ryan Gasparini &nbsp; d.b.a. RXGX, LLC &nbsp; <i style="color:;" class="fa fa-sun-o"></i> Made in PHX
+                &copy;2014 Ryan Gasparini
+                &nbsp; &nbsp;
+                d.b.a. RXGX, LLC
+                &nbsp; &nbsp;
+                <i style="color:;" class="fa fa-sun-o"></i> Made in Sunny PHX
             </p>
         </div>
     </footer>
@@ -96,6 +99,132 @@
         </div>
     </section>
 </script>
+
+
+<script id="resume" type="text/x-handlebars">
+    <header>
+        <h1 class="headline">My Resume</h1>
+    </header>
+
+    <section class="focus">
+        <h1 class="heading">Career Focus</h1>
+        <p>
+            To lead and collaborate in the design and development of ambitious
+            Web-based products and services with a team where individuals value agile
+            practices, usability, and personal evolution.
+            I&rsquo;m a dynamic guy for the static quo.
+        </p>
+    </section>
+
+    <section class="skill-list">
+        <h1 class="heading">Primary Properties</h1>
+        <ul class="products">
+            <li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/design.svg">
+                </div>
+                <p class="description">
+                    <strong>Product design</strong>, user experience, interface design, and functional prototypes. Start with sketches; finish with flexible layouts.
+                </p>
+            </li>
+            <li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/browser.svg">
+                </div>
+                <p class="description">
+                    <strong>JavaScript &amp; HTML5 application</strong> development with modern HTML5 frameworks like <span class="hashtag">EmberJS</span>, <span class="hashtag">AngularJS</span>, and <span class="hashtag">BackboneJS</span>.
+                </p>
+            </li>
+            <li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/development.svg">
+                </div>
+                <p class="description">
+                    Built new and scaled existing <strong>Ruby on Rails applications</strong>, including Capistrano and Vagrant deployment and Rspec tests.
+                </p>
+            </li>
+            <!--li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/quirks.svg">
+                </div>
+                <p class="description">
+                    Internet <strong>browser quirks and bugs</strong> such as the box model and CORS in old verions of IE; not to mention prefixes for CSS and HTML5 APIs.
+                </p>
+            </li-->
+        </ul>
+    </section>
+
+    <section class="skill-list">
+        <h1 class="heading">Secondary Attributes</h1>
+        <ul class="products">
+            <li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/database.svg">
+                </div>
+                <p class="description">
+                    <strong>Relational database</strong> design or migration. I enjoy running EXPLAIN queries more than a normal human being should.
+                </p>
+            <li class="product">
+                <div class="container">
+                    <!--i class="fa fa-github-alt"></i-->
+                    <img class="icon" src="./svg/deploy.svg">
+                </div>
+                <p class="description">
+                    Setup and management of <strong>version control software</strong> like Git and Mercurial. Introduced branching, merging, and pull request policies.
+                </p>
+            </li>
+            <li class="product">
+                <div class="container">
+                    <img class="icon" src="./svg/agile.svg">
+                </div>
+                <p class="description">
+                    Introduced and participated in <strong>agile workflows</strong>. Have experience in <span class="hashtag">Scrum</span> and <span class="hashtag">XP</span>, with a personal bias towards <span class="hashtag">Kanban</a>.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="results">
+        <h1 class="heading">Experience &amp; Results</h1>
+
+        <div class="result">
+            <h1 class="heading">
+                June 2013 &ndash; March 2014, <a href="http://authoritylabs.com" class="account">@AuthorityLabs</a>, Phoenix, AZ
+            </h1>
+            <p class="description">
+                Introduced and deployed an <span class="hashtag">#AngularJS</span> to <span class="hashtag">#EmberJS</span> rewrite which resulted in a more fluid layout for tablets and desktops, improved analytics, fewer page refreshes, and shorter browser loads.
+            </p>
+        </div>
+
+        <div class="result">
+            <h1 class="heading">
+                November 2012 &ndash; June 2013, <a href="http://webfilings.com" class="account">@WebFilings</a>, Scottsdale, AZ
+            </h1>
+            <p class="description">
+                Contributed on a cross-team, enterprise <span class="hashtag">#AngularJS</span> product by creating new <span class="hashtag">#JavaScript</span> services and helped establish standards for code format and testing.
+            </p>
+        </div>
+
+        <div class="result">
+            <h1 class="heading">
+                January 2012 &ndash; October 2012, <a href="http://pathwaystv.com" class="account">@PathwaysTV</a>, Phoenix, AZ
+            </h1>
+            <p class="description">
+                Introduced and lead a transition to a product-based business model which, following the migration of existing <span class="hashtag">#PHP</span> sites and <span class="hashtag">#MySQL</span> databases to a distributed <span class="hashtag">#RubyOnRails</span> platform, eliminated 80% of server/hosting costs.
+            </p>
+        </div>
+
+        <div class="result">
+            <h1 class="heading">
+                December 2010 &ndash; September 2011, <a href="http://imemories.com" class="account">@iMemories</a>, Scottsdale, AZ
+            </h1>
+            <p class="description">
+                Lead effort to rebuild a Flash-based photo and video library application in <span class="hashtag">#HTML5</span> with custom <span class="hashtag">#BackboneJS</span>-inspired framework.
+            </p>
+        </div>
+    </section>
+</script>
+
 
 <script src="./bower_components/handlebars/handlebars.min.js"></script>
 <script src="./bower_components/jquery/dist/jquery.min.js"></script>
