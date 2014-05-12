@@ -42,7 +42,7 @@ var App;
 
 (function views() {
     'use strict';
-    
+
     App.View = Ember.View.extend({
         className: 'container'
     });
