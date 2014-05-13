@@ -19,7 +19,7 @@ a {
 body {
     background-color: rgb(242, 244, 245);
     color: rgb(32, 38, 40);
-    font: 300 1em/1.75em Roboto;
+    font: 300 1em/1.5em Roboto;
     text-align: center;
 }
 
@@ -55,31 +55,47 @@ body {
 
 #header {
     background-color: #39f;
-    padding: 1.5em .5em .5em;
+    padding: 3em .5em 1.5em;
 }
 
 #header a {
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 #header .identity,
 #header .menu {
     display: inline-block;
+    vertical-align: top;
 }
 
 #header .identity {
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 #header .menu {
     float: right;
+    font-size: .875em;
 }
 
 #header .menu a {
-    font-size: .875em;
+    display: inline-block;
+    border: 1px solid lightgray;
+    margin-left: .5em;
+    padding: .0625em .5em .125em;
+
+    text-decoration: none;
 }
+
+#header .menu .active a,
+#header .menu a:hover {
+    background-color: white;
+    border-color: white;
+    color: inherit;
+}
+
+
 
 
 
