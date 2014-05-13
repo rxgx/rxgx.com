@@ -9,6 +9,7 @@ var App;
 
     App.Router.map(function() {
         this.route('about');
+        this.route('consulting');
         this.route('contact');
         this.route('resume');
     });
