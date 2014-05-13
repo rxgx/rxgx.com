@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,500,700">
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./bower_components/font-awesome-bower/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/font-awesome-bower/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -22,9 +22,8 @@
 
             <nav class="menu">
                 {{#link-to 'about'}}About{{/link-to}}
-                &nbsp;
+                {{#link-to 'consulting'}}Consulting{{/link-to}}
                 {{#link-to 'resume'}}Resume{{/link-to}}
-                &nbsp;
                 {{#link-to 'contact'}}Contact{{/link-to}}
             </nav>
         </div>
@@ -54,55 +53,7 @@
 </script>
 
 
-<script id="index" type="text/x-handlebars">
-    <header>
-        <h1 class="headline">Code for What Works</h1>
-    </header>
-
-    <section class="products">
-        <div class="product database">
-            <div class="container">
-                <i class="fa fa-hdd-o"></i>
-            </div>
-            <h1 class="name">
-                Content Strategy<br>
-                &plus;<br>
-                Database Design
-            </h1>
-            <p class="description">
-                Before sketching on paper or writing any code, the content needs to be gathered and organized to a establish a strategy.
-            </p>
-        </div>
-
-        <div class="product interface">
-            <div class="container">
-                <i class="fa fa-html5"></i>
-            </div>
-            <h1 class="name">
-                Interface Design<br>
-                &plus;<br>
-                User Experience
-            </h1>
-            <p class="description">
-                A good interface leverages flexible layouts, values content over design, and offers a delightful user experience. Build functional prototypes  instead of enduring long rounds of design critiques.
-            </p>
-        </div>
-
-        <div class="product marketplace">
-            <div class="container">
-                <i class="fa fa-credit-card"></i>
-            </div>
-            <h1 class="name">
-                Application Development<br>
-                &plus;<br>
-                eCommerce
-            </h1>
-            <p class="description">
-                Sell your goods or services and receive money, too. Third party payment services, like <a href="http://parse.com">Parse</a> and <a href="http://square.com">Square</a>, simplify business processes.
-            </p>
-        </div>
-    </section>
-</script>
+<script data-template-name="index" src="js/handlebars/index.handlebars" type="text/x-handlebars"></script>
 
 
 <script id="resume" type="text/x-handlebars">
@@ -198,7 +149,7 @@
                     June 2013&mdash;March 2014
                 </h2>
                 <dd class="description">
-                    Introduced and deployed an <span class="hashtag">AngularJS</span> to <span class="hashtag">EmberJS</span> rewrite which resulted in a more fluid layout for tablets and desktops, improved analytics, fewer page refreshes, and shorter browser loads.
+                    Introduced and deployed an <span class="hashtag">AngularJS</span> to <span class="hashtag">EmberJS</span> rewrite which resulted in a more fluid layout for tablets and desktops, improved analytics, reduced full-page refreshes, and shortened browser loads.
                 </dd>
             </li>
 
@@ -250,11 +201,13 @@
     </section>
 </script>
 
+<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/ryangasparini" data-format="inline" data-related="false"></script>
 
-<script src="./bower_components/handlebars/handlebars.min.js"></script>
-<script src="./bower_components/jquery/dist/jquery.min.js"></script>
-<script src="./bower_components/ember/ember.js"></script>
-<script src="./bower_components/ember-data/ember-data.js"></script>
+<script src="./vendor/handlebars/handlebars.min.js"></script>
+<script src="./vendor/jquery/dist/jquery.min.js"></script>
+<script src="./vendor/ember/ember.js"></script>
+<script src="./vendor/ember-data/ember-data.js"></script>
 
 <script src="./js/ember.js"></script>
 
