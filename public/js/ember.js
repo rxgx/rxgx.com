@@ -7,6 +7,11 @@ var App;
         rootElement: '#layout'
     });
 
+    /*App.Router.reopen({
+        location: 'history',
+        rootURL: '/'
+    });*/
+
     App.Router.map(function() {
         this.route('about');
         this.route('consulting');
