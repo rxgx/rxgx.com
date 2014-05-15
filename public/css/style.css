@@ -80,11 +80,11 @@ body {
 }
 
 #header .menu a {
-    display: inline-block;
     border: 1px solid lightgray;
     margin-left: .5em;
     padding: .0625em .5em .125em;
-
+    box-sizing: border-box;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -261,16 +261,16 @@ body {
 }
 
 #footer .social a {
-    display: inline-block;
     border: 1px solid lightgray;
     margin-left: .5em;
-    padding: .125em .625em .25em;
+    padding: .0625em .625em .125em;
     color: gray;
+    display: inline-block;
     text-decoration: none;
 }
 
 #footer .social a:hover {
-    background-color: #39f;
-    border-color: #39f;
+    background-color: gray;
+    border-color: gray;
     color: white;
 }
