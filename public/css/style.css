@@ -80,7 +80,7 @@ body {
 }
 
 #header .menu a {
-    border: 1px solid lightgray;
+    border: 1px solid white;
     margin-left: .5em;
     padding: .0625em .5em .125em;
     box-sizing: border-box;
@@ -243,24 +243,26 @@ body {
 }
 
 #footer .copyright,
-#footer .social {
+#footer .menu {
     margin: 0;
     color: gray;
     display: inline-block;
-    font-size: .8125em;
     font-weight: 300;
 }
 
 #footer .copyright {
     width: 34%;
+    font-size: .875em;
+    font-weight: 400;
+}
+
+#footer .menu {
+    width: 65%;
+    font-size: .8125em;
     text-align: right;
 }
 
-#footer .social {
-    width: 65%;
-}
-
-#footer .social a {
+#footer .menu a {
     border: 1px solid lightgray;
     margin-left: .5em;
     padding: .0625em .625em .125em;
@@ -269,7 +271,7 @@ body {
     text-decoration: none;
 }
 
-#footer .social a:hover {
+#footer .menu a:hover {
     background-color: gray;
     border-color: gray;
     color: white;
