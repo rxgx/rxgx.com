@@ -12,7 +12,12 @@
  24  1.5
 */
 
+
 a {
+    color: inherit;
+}
+
+a:hover {
     color: #39f;
 }
 
@@ -44,9 +49,8 @@ body {
 #content > .container,
 #footer  > .container {
     max-width: 928px;
-    min-width: 728px;
+    min-width: 680px;
     margin: 0 auto;
-    box-sizing: auto;
     text-align: left;
 }
 
@@ -70,19 +74,20 @@ body {
 }
 
 #header .identity {
-    font-weight: 700;
+    font-size: 2em;
+    font-style: italic;
     text-transform: uppercase;
 }
 
 #header .menu {
     float: right;
-    font-size: .875em;
+    font: 500 1em 'Roboto Condensed';
 }
 
 #header .menu a {
     border: 1px solid white;
     margin-left: .5em;
-    padding: .0625em .5em .125em;
+    padding: .0625em .5em .1875em;
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
@@ -114,17 +119,20 @@ body {
     font-size: 2.5em;
     font-weight: 300;
     letter-spacing: -1px;
-    line-height: 1em;
+    line-height: 1.125em;
 }
 
 #content section {
     margin-top: 4.5em;
 }
 
+#content section:first-of-type {
+    margin-top: 1.5em;
+}
+
 #content section > .heading {
     border-bottom: 1px solid lightgray;
-    font-size: 1em;
-    font-weight: 600;
+    font: 700 1.25em 'Roboto Condensed';
     text-transform: uppercase;
 }
 
@@ -205,13 +213,13 @@ body {
 
 #content .product .dates {
     margin-top: 1em;
-    font-size: .75em;
+    font: 300 .875em 'Roboto Condensed'
 }
 
 #content .product .name {
-    margin-top: 1.5em;
-    font-size: .9375em;
-    font-weight: bold;
+    margin-top: .5em;
+    font-size: 1.125em;
+    font-weight: 500;
     line-height: 1em;
 }
 
@@ -247,25 +255,24 @@ body {
     margin: 0;
     color: gray;
     display: inline-block;
+    font: 500 1em 'Roboto Condensed';
     font-weight: 300;
 }
 
 #footer .copyright {
     width: 34%;
-    font-size: .875em;
-    font-weight: 400;
+    text-transform: uppercase;
 }
 
 #footer .menu {
     width: 65%;
-    font-size: .8125em;
     text-align: right;
 }
 
 #footer .menu a {
     border: 1px solid lightgray;
     margin-left: .5em;
-    padding: .0625em .625em .125em;
+    padding: .0625em .625em .1875em;
     color: gray;
     display: inline-block;
     text-decoration: none;
