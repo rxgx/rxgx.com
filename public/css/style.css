@@ -8,6 +8,7 @@
  14  0.875
  15  0.9375
  16  1.0
+ 18  1.125
  20  1.25
  24  1.5
 */
@@ -22,7 +23,7 @@ a:hover {
 }
 
 body {
-    background-color: rgb(242, 244, 245);
+    background-color: white;
     color: rgb(32, 38, 40);
     font: 300 1em/1.5em Roboto;
     text-align: center;
@@ -39,15 +40,7 @@ body {
     font-weight: 500;*/
 }
 
-#header,
-#content,
-#footer {
-    padding: 0 20px;
-}
-
-#header  > .container,
-#content > .container,
-#footer  > .container {
+.section > .container {
     max-width: 928px;
     min-width: 680px;
     margin: 0 auto;
@@ -57,8 +50,38 @@ body {
 
 
 
+
+
+#contact {
+    background-color: #0078cc;
+}
+
+#contact .container {
+    padding: .25em 0;
+}
+
+#contact .menu {
+    color: white;
+    font-size: .75em;
+    font-weight: 500;
+}
+
+#contact .menu a {
+    margin-right: 1em;
+    opacity: .75;
+    text-decoration: none;
+}
+
+#contact .menu .fa {
+    opacity: .75;
+}
+
+
+
+
+
 #header {
-    background-color: #39f;
+    background-color: #00aeff;
     padding: 3em .5em 1.5em;
 }
 
@@ -104,33 +127,36 @@ body {
 
 
 
-#content .container header {
-    margin-top: 1.5em;
+#content .header {
+    background-color: rgb(242, 244, 245);
 }
 
-#content .intro p {
+#content .header .container {
+    padding: 4.5em 0 3em 0;
+}
+
+#content .header p {
     font-size: 1.25em;
     font-weight: 300;
     line-height: 1.5em;
 }
 
-#content .headline {
-    margin-top: 2em;
+#content .header .headline {
     font-size: 2.5em;
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 1.125em;
 }
 
-#content section {
+#content .section {
     margin-top: 4.5em;
 }
 
-#content section:first-of-type {
-    margin-top: 1.5em;
+#content .section.header {
+    margin-top: 0;
 }
 
-#content section > .heading {
+#content .section .heading {
     border-bottom: 1px solid lightgray;
     font: 700 1.25em 'Roboto Condensed';
     text-transform: uppercase;
@@ -173,9 +199,9 @@ body {
 }
 
 #content .product .icon {
-    width: 2.5em;
-    height: 2.5em;
-    margin-top: 1.25em;
+    width: 2.25em;
+    height: 2.25em;
+    margin-top: 1.5em;
     display: inline-block;
     text-align: left;
     transition: all .35s ease-in;
@@ -186,7 +212,7 @@ body {
 }
 
 #content .product:hover .container {
-    border-color: #39f;
+    border-color: #00aeff;
 }
 
 #content .product:hover .icon {
@@ -196,7 +222,7 @@ body {
 }
 
 #content .product:hover strong {
-    color: #39f;
+    color: #00aeff;
 }
 
 #content .product .description {
@@ -212,13 +238,13 @@ body {
 }
 
 #content .product .dates {
-    margin-top: 1em;
+    margin-top: .5em;
     font: 300 .875em 'Roboto Condensed'
 }
 
 #content .product .name {
-    margin-top: .5em;
-    font-size: 1.125em;
+    margin-top: 1.5em;
+    font-size: 1em;
     font-weight: 500;
     line-height: 1em;
 }
