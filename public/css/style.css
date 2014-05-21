@@ -53,26 +53,46 @@ body {
 
 
 #contact {
-    background-color: #0078cc;
+    background-color: #0067aa;
 }
 
 #contact .container {
     padding: .25em 0;
+    overflow: hidden;
+}
+
+#contact .menu,
+#contact .social {
+    color: white;
+    float: left;
+    font: 500 .75em 'Roboto Condensed';
+    text-transform: uppercase;
 }
 
 #contact .menu {
-    color: white;
-    font-size: .75em;
-    font-weight: 500;
+    width: 34%;
 }
 
-#contact .menu a {
+#contact .social {
+    width: 66%;
+    text-align: right;
+}
+
+#contact a {
     margin-right: 1em;
     opacity: .75;
     text-decoration: none;
 }
 
-#contact .menu .fa {
+#contact a:hover {
+    color: white;
+    opacity: 1;
+}
+#contact .social a:last-of-type {
+    margin-right: 0;
+}
+
+#contact .fa {
     opacity: .75;
 }
 
@@ -267,11 +287,12 @@ body {
 
 
 #footer {
-    margin: 4.5em 0 3em;
+    margin-top: 4.5em;
+    padding: 1.5em 0;
+    background-color: whitesmoke;
 }
 
 #footer .container {
-    border-top: 1px solid lightgray;
     padding-top: 1.5em;
     overflow: hidden;
 }
