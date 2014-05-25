@@ -25,7 +25,7 @@ a:hover {
 body {
     background-color: white;
     color: rgb(32, 38, 40);
-    font: 300 1em/1.5em Roboto;
+    font: 300 1em/1.5em Roboto, sans-serif;
     text-align: center;
 }
 
@@ -65,7 +65,7 @@ body {
 #contact .social {
     color: white;
     float: left;
-    font: 500 .75em 'Roboto Condensed';
+    font: 500 .75em 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ body {
 
 #header .menu {
     float: right;
-    font: 500 1em 'Roboto Condensed';
+    font: 500 1em 'Roboto Condensed', 'Helvetica Condensed', sans-serif;
 }
 
 #header .menu a {
@@ -178,7 +178,7 @@ body {
 
 #content .section .heading {
     border-bottom: 1px solid lightgray;
-    font: 700 1.25em 'Roboto Condensed';
+    font: 700 1.25em 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
@@ -302,7 +302,7 @@ body {
     margin: 0;
     color: gray;
     display: inline-block;
-    font: 500 1em 'Roboto Condensed';
+    font: 500 1em 'Roboto Condensed', sans-serif;
     font-weight: 300;
 }
 
