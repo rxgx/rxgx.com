@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head lang="en">
-    <title>Ryan Gasparini (RXGX)</title>
+    <title>RXGX: Ryan Gasparini, Product Development</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,500,700">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700">
@@ -11,43 +11,271 @@
 </head>
 <body>
 
-<div id="layout"></div>
+<div id="layout">
 
-
-
-<script type="text/x-handlebars">
-    <section id="contact" class="section">
+    <!--section id="contact" class="section">
         <div class="container">
             <nav class="menu">
                 <i class="fa fa-phone"></i> <a href="tel:602-492-7949">602-492-RXGX</a>
                 <i class="fa fa-envelope-o"></i> <a href="mailto:ryan@rxgx.com">ryan@rxgx.com</a>
             </nav>
-
-            <nav class="social">
-                <i class="fa fa-facebook"></i> <a href="http://facebook.com/ryangasparini">Facebook</a>
-                <i class="fa fa-github"></i> <a href="http://github.com/rxgx">Github</a>
-                <i class="fa fa-linkedin"></i> <a href="http://linkedin.com/in/ryangasparini">LinkedIn</a>
-                <i class="fa fa-twitter"></i> <a href="http://twitter.com/rxgx">Twitter</a>
-            </nav>
         </div>
-    </section>
+    </section-->
 
     <header id="header" class="section">
         <div class="container">
             <h1 class="identity tk-sneakers-pro">
-                {{#link-to 'index'}}RXGX{{/link-to}}
+                <a href="#">RXGX</a>
             </h1>
 
             <nav class="menu">
-                {{#link-to 'about'}}About{{/link-to}}
-                {{#link-to 'consulting'}}Consulting{{/link-to}}
-                {{#link-to 'resume'}}Resume{{/link-to}}
+                <a href="#about">About</a>
+                <a href="#consulting">Consulting</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <article id="content">
-        {{outlet}}
+        <header class="header">
+            <div class="container">
+                <h1 class="headline">A dynamic guy for the static quo.</h1>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+            <p>
+                Ryan Gasparini is a product developer in Phoenix, Arizona who gets all boned-up over design, technology, and the Internets. Starting as a self taught HTML tag wrangler and CSS styler, he dabbled in the academics of NetWare and Windows NT but soon found his niche writing JavaScript and ActionScript.
+            </p>
+            <p>
+                He&rsquo;s torn between his two loves: design and programming. When it comes to web sites and applications, he doesn&rsquo;t care if he&rsquo;s writing the JavaScript for the interface or Ruby for the services. After all, one wants to have an API and consume it, too.
+            </p>
+            <p>
+                Ryan&rsquo;s best fit is in an organization that values building web-based software (commonly referred to &ldquo;the cloud,&rdquo; maybe you&rsquo;ve heard of it) that leverages automated, elastic deployment to deliver non-blocking, long-polling, real-time interfaces. Currently, he&rsquo;s building AJAX-based, client-side sans-MVC applications in HTML 5, CSS 3, and JavaScript 1 while maintaining browser diversity.
+            </p>
+            <p>
+                There have been some that said he is in need of progressive enhancement or graceful degradation. But let&rsquo;s be honest, those buzzwords, on their own, aren&rsquo;t going to cure cancer or raise the dead. With this whole new JavaScript and web software thing, you may want to hire someone with the experience to orchestrate mathematical results.
+            </p>
+            </div>
+        </section>
+
+
+        <header class="section header">
+            <div class="container">
+                <h1 class="headline">I provide the knowledge and expertise to run a successful online business.</h1>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="heading">Services I offer</h1>
+
+                <div class="products">
+                    <div class="product database">
+                        <div class="container">
+                            <img class="icon" src="./svg/strategy.svg">
+                        </div>
+                        <h1 class="name">
+                            Strategy &amp; Marketing
+                        </h1>
+                        <p class="description">
+                            If you build it, will they come? Before sketching on paper or writing any code, your business and marketing strategy need to be aligned with the commercial intent of your customers. We&rsquo;ll help guide the positioning of your products and services.
+                        </p>
+                    </div>
+
+                    <div class="product interface">
+                        <div class="container">
+                            <img class="icon" src="./svg/ux.svg">
+                        </div>
+                        <h1 class="name">
+                            User Experience Design
+                        </h1>
+                        <p class="description">
+                            A good interface leverages responsive layouts, values content over design, and offers a delightful user experience. We build functional prototypes  instead of suffering through long rounds of design critiques.
+                        </p>
+                    </div>
+
+                    <div class="product marketplace">
+                        <div class="container">
+                            <img class="icon" src="./svg/checkout.svg">
+                        </div>
+                        <h1 class="name">
+                            Application Development
+                        </h1>
+                        <p class="description">
+                            Your purpose of an building an online presence is to receive revenue. Utilizing third party payment services, like <a href="http://stripe.com">Stripe</a> and <a href="http://square.com">Square</a>, we&rsquo;ll simplify business processes and make transactions less painful.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <header class="header section">
+            <div class="container">
+                <h1 class="headline">Ryan Gasparini, Product Developer</h1>
+                <p>
+                    In my career, the goal is to lead and collaborate in the design and development of ambitious
+                    Web-based products and services with a team where individuals value agile
+                    practices, usability, and personal evolution.
+                </p>
+            </div>
+        </header>
+
+        <section class="skill-list section">
+            <div class="container">
+                <h1 class="heading">Core Competency</h1>
+                <ul class="products">
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/design.svg">
+                        </div>
+                        <p class="description">
+                            <strong>Product design</strong>, user experience, interface design, and functional prototypes. Start with sketches; finish with flexible layouts.
+                        </p>
+                    </li>
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/browser.svg">
+                        </div>
+                        <p class="description">
+                            Built <strong>HTML5 applications</strong> with future-forward JavaScript frameworks, <span class="hashtag">Ember</span> and <span class="hashtag">React</span>; legacy with <span class="hashtag">Angular</span> and <span class="hashtag">Backbone</span>.
+                        </p>
+                    </li>
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/development.svg">
+                        </div>
+                        <p class="description">
+                            Built new and scaled existing <strong>Ruby on Rails</strong> applications and APIs, deployed with Capistrano and Vagrant, and tested by Rspec.
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="products">
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/database.svg">
+                        </div>
+                        <p class="description">
+                            <strong>Relational database</strong> design or migration. I enjoy running EXPLAIN queries more than a normal human being should.
+                        </p>
+                    </li>
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/deploy.svg">
+                        </div>
+                        <p class="description">
+                            Setup and management of <strong>version control software</strong> like Git and Mercurial. Introduced branching, merging, and pull request policies.
+                        </p>
+                    </li>
+                    <li class="product">
+                        <div class="container">
+                            <img class="icon" src="./svg/agile.svg">
+                        </div>
+                        <p class="description">
+                            Introduced and collaborated in <strong>agile workflows</strong>. Have experience in <span class="hashtag">Scrum</span> and <span class="hashtag">XP</span>, with a personal bias towards <span class="hashtag">Kanban</a>.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="results" class="section">
+            <div class="container">
+                <h1 class="heading">Experience &amp; Results</h1>
+                <ul class="products">
+                    <li class="result product">
+                        <div class="container">
+                            <img class="icon" src="./svg/authoritylabs.svg">
+                        </div>
+                        <h1 class="name">
+                            <a href="http://authoritylabs.com">AuthorityLabs</a>
+                        </h1>
+                        <h2 class="dates">
+                            March 2014 &#8592; June 2013
+                        </h2>
+                        <dd class="description">
+                            Introduced and deployed an <span class="hashtag">AngularJS</span> to <span class="hashtag">EmberJS</span> rewrite which resulted in a more fluid layout for all devices and reduced browser load times using incremental data requests.
+                        </dd>
+                    </li>
+
+                    <li class="result product">
+                        <div class="container">
+                            <img class="icon" src="./svg/webfilings.svg">
+                        </div>
+                        <h1 class="name">
+                            <a href="http://webfilings.com">WebFilings</a>
+                        </h1>
+                        <h2 class="dates">
+                            June 2013 &#8592; November 2012
+                        </h2>
+                        <dd class="description">
+                            Contributed on a cross-team, enterprise <span class="hashtag">AngularJS</span> product by creating new <span class="hashtag">JavaScript</span> services and helped establish standards for code format and testing.
+                        </dd>
+                    </li>
+
+                    <li class="result product">
+                        <div class="container">
+                            <img class="icon" src="./svg/pathways.svg">
+                        </div>
+                        <h1 class="name">
+                            <a href="http://pathwaystv.com" class="account">PathwaysTV</a>
+                        </h1>
+                        <h2 class="dates">
+                            October 2012  &#8592; January 2012
+                        </h2>
+                        <p class="description">
+                            Introduced and lead a transition to a product-based business model which, following the migration of existing <span class="hashtag">PHP</span> sites and <span class="hashtag">MySQL</span> databases to a distributed <span class="hashtag">Rails</span> platform, reduced TOC by 80%.
+                        </p>
+                    </li>
+
+                    <li class="result product">
+                        <div class="container">
+                            <img class="icon" src="./svg/imemories.svg">
+                        </div>
+                        <h1 class="name">
+                            <a class="company" href="http://imemories.com">iMemories</a>
+                        </h1>
+                        <h2 class="dates">
+                             September 2011 &#8592; December 2010
+                        </h2>
+                        <p class="description">
+                            Lead effort to rebuild a Flash-based photo and video library application in <span class="hashtag">HTML5</span>, with help of Google Chrome Frame, by building a custom <span class="hashtag">BackboneJS</span>-inspired framework.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="section">
+            <div class="container">
+                <h1 class="heading">Follow around the Internets</h1>
+                <p class="social">
+                    <i class="fa fa-facebook"></i> <a href="http://facebook.com/ryangasparini">Facebook</a>
+                    <i class="fa fa-github"></i> <a href="http://github.com/rxgx">Github</a>
+                    <i class="fa fa-google-plus"></i> <a href="http://plus.google.com/+ryangasparini">Google+</a>
+                    <i class="fa fa-linkedin"></i> <a href="http://linkedin.com/in/ryangasparini">LinkedIn</a>
+                    <i class="fa fa-twitter"></i> <a href="http://twitter.com/rxgx">Twitter</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="heading">Colophon</h1>
+                <p>
+                    The primary font used on the site is &ldquo;Roboto&rdquo; with &ldquo;Roboto Condensed&rdquo; for headings. Roboto is available via <a href="http://www.google.com/fonts">Google Fonts</a>.
+                    The social media icons are provided by <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> by Fort Awesome.
+                    The icons on the resume page are from "Streamline&mdash;Free" by <a href="http://www.webalys.com">Webalys</a>.
+                </p>
+            </div>
+        </section>
     </article>
 
     <footer id="footer" class="section">
@@ -61,339 +289,12 @@
             </nav>
         </div>
     </footer>
-</script>
-
-
-
-
-<script id="about" type="text/x-handlebars">
-    <header class="header section">
-        <div class="container">
-            <h1 class="headline">A dynamic guy for the static quo.</h1>
-        </div>
-    </header>
-
-    <section class="section">
-        <div class="container">
-        <p>
-            Ryan Gasparini is a product developer in Phoenix who gets all boned-up over design, technology, and the Internets. Starting as a self taught HTML tag wrangler and CSS styler, he dabbled in the academics of NetWare and Windows NT but soon found his niche writing JavaScript and ActionScript.
-        </p>
-        <p>
-            He&rsquo;s torn between his two loves: design and programming. When it comes to web sites and applications, he doesn&rsquo;t care if he&rsquo;s writing the JavaScript for the interface or Ruby for the services. After all, one wants to have an API and consume it, too.
-        </p>
-        <p>
-            Ryan&rsquo;s best fit is in an organization that values building web-based software (commonly referred to &ldquo;the cloud,&rdquo; maybe you&rsquo;ve heard of it) that leverages automated, elastic deployment to deliver non-blocking, long-polling, real-time interfaces. Currently, he&rsquo;s building AJAX-based, client-side sans-MVC applications in HTML 5, CSS 3, and JavaScript 1 while maintaining browser diversity.
-        </p>
-        <p>
-            There have been some that said he is in need of progressive enhancement or graceful degradation. But let&rsquo;s be honest, those buzzwords, on their own, aren&rsquo;t going to cure cancer or raise the dead. With this whole new JavaScript and web software thing, you may want to hire someone with the experience to orchestrate mathematical results.
-        </p>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h1 class="heading">Follow back for what</h1>
-            <p class="social">
-                Follow RXGX
-                <a href="http://facebook.com/ryangasparini">Facebook</a>
-                <a href="http://plus.google.com/+ryangasparini">Google+</a>
-                <a href="http://linkedin.com/in/ryangasparini">LinkedIn</a>
-                <a href="http://twitter.com/rxgx">Twitter</a>
-            </p>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h1 class="heading">Colophon</h1>
-            <p>
-                The primary font used on the site is &ldquo;Roboto&rdquo; with &ldquo;Roboto Condensed&rdquo; for headings. Roboto is available via <a href="http://www.google.com/fonts">Google Fonts</a>.
-                The icons from the consulting page are available at <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> by Fort Awesome.
-                The icons on the resume page are from "Streamline&mdash;Free" by <a href="http://www.webalys.com">Webalys</a>.
-            </p>
-        </div>
-    </section>
-</script>
-
-
-
-<script id="consulting" type="text/x-handlebars">
-<header class="section header">
-    <div class="container">
-        <h1 class="headline">We provide the knowledge and expertise to run a successful online business.</h1>
-        <p>How about some text</p>
-    </div>
-</header>
-
-<section class="section">
-    <div class="container">
-        <h1 class="heading">Services we offer</h1>
-
-        <div class="products">
-            <div class="product database">
-                <div class="container">
-                    <img class="icon" src="./svg/strategy.svg">
-                </div>
-                <h1 class="name">
-                    Strategy &amp; Marketing
-                </h1>
-                <p class="description">
-                    If you build it, will they come? Before sketching on paper or writing any code, your business and marketing strategy need to be aligned with the commercial intent of your customers. We&rsquo;ll help guide the positioning of your products and services.
-                </p>
-            </div>
-
-            <div class="product interface">
-                <div class="container">
-                    <img class="icon" src="./svg/ux.svg">
-                </div>
-                <h1 class="name">
-                    User Experience Design
-                </h1>
-                <p class="description">
-                    A good interface leverages responsive layouts, values content over design, and offers a delightful user experience. We build functional prototypes  instead of suffering through long rounds of design critiques.
-                </p>
-            </div>
-
-            <div class="product marketplace">
-                <div class="container">
-                    <img class="icon" src="./svg/checkout.svg">
-                </div>
-                <h1 class="name">
-                    Application Development
-                </h1>
-                <p class="description">
-                    Your purpose of an building an online presence is to receive revenue. Utilizing third party payment services, like <a href="http://stripe.com">Stripe</a> and <a href="http://square.com">Square</a>, we&rsquo;ll simplify business processes and make transactions less painful.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h1 class="heading">Case Studies</h1>
-        <div class="products">
-            <div class="product">
-        `        <div class="container">
-                    <img src="">
-                </div>
-                <h1 class="name">Authority Labs</h1>
-                <p class="description">
-                    I did stuffs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</script>
-
-
-
-
-
-<script id="index" type="text/x-handlebars">
-<header class="header section">
-    <div class="container">
-        <h1 class="headline">Code for What Works</h1>
-    </div>
-</header>
-
-<section class="products section">
-    <div class="container">
-        <div class="product">
-            <div class="container">
-                <img class="icon" src="./svg/me.svg">
-            </div>
-            <h1 class="name">
-                More About Me
-            </h1>
-            <p class="description">
-                About excerpt content goes here
-            </p>
-        </div>
-
-        <div class="product">
-            <div class="container">
-                <img class="icon" src="./svg/consulting.svg">
-            </div>
-            <h1 class="name">
-                Consulting Services
-            </h1>
-            <p class="description">
-                Consulting excerpt content goes here
-            </p>
-        </div>
-
-        <div class="product">
-            <div class="container">
-                <img class="icon" src="./svg/experience.svg">
-            </div>
-            <h1 class="name">
-                Professional Experience
-            </h1>
-            <p class="description">
-                Resume excerpt content goes here
-            </p>
-        </div>
-    </div>
-</section>
-</script>
-
-
-
-
-
-
-<script id="resume" type="text/x-handlebars">
-    <header class="header section">
-        <div class="container">
-            <h1 class="headline">Ryan Gasparini, Product Developer</h1>
-            <p>
-                In my career, the goal is to lead and collaborate in the design and development of ambitious
-                Web-based products and services with a team where individuals value agile
-                practices, usability, and personal evolution.
-            </p>
-        </div>
-    </header>
-
-    <section class="skill-list section">
-        <div class="container">
-            <h1 class="heading">Core Competency</h1>
-            <ul class="products">
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/design.svg">
-                    </div>
-                    <p class="description">
-                        <strong>Product design</strong>, user experience, interface design, and functional prototypes. Start with sketches; finish with flexible layouts.
-                    </p>
-                </li>
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/browser.svg">
-                    </div>
-                    <p class="description">
-                        Built <strong>HTML5 applications</strong> with future-forward JavaScript frameworks, <span class="hashtag">Ember</span> and <span class="hashtag">React</span>; legacy with <span class="hashtag">Angular</span> and <span class="hashtag">Backbone</span>.
-                    </p>
-                </li>
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/development.svg">
-                    </div>
-                    <p class="description">
-                        Built new and scaled existing <strong>Ruby on Rails</strong> applications and APIs, deployed with Capistrano and Vagrant, and tested by Rspec.
-                    </p>
-                </li>
-            </ul>
-
-            <ul class="products">
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/database.svg">
-                    </div>
-                    <p class="description">
-                        <strong>Relational database</strong> design or migration. I enjoy running EXPLAIN queries more than a normal human being should.
-                    </p>
-                </li>
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/deploy.svg">
-                    </div>
-                    <p class="description">
-                        Setup and management of <strong>version control software</strong> like Git and Mercurial. Introduced branching, merging, and pull request policies.
-                    </p>
-                </li>
-                <li class="product">
-                    <div class="container">
-                        <img class="icon" src="./svg/agile.svg">
-                    </div>
-                    <p class="description">
-                        Introduced and collaborated in <strong>agile workflows</strong>. Have experience in <span class="hashtag">Scrum</span> and <span class="hashtag">XP</span>, with a personal bias towards <span class="hashtag">Kanban</a>.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="results" class="section">
-        <div class="container">
-            <h1 class="heading">Experience &amp; Results</h1>
-            <ul class="products">
-                <li class="result product">
-                    <div class="container">
-                        <img class="icon" src="./svg/authoritylabs.svg">
-                    </div>
-                    <h1 class="name">
-                        <a href="http://authoritylabs.com">AuthorityLabs</a>
-                    </h1>
-                    <h2 class="dates">
-                        March 2014 &#8592; June 2013
-                    </h2>
-                    <dd class="description">
-                        Introduced and deployed an <span class="hashtag">AngularJS</span> to <span class="hashtag">EmberJS</span> rewrite which resulted in a more fluid layout for all devices and reduced browser load times using incremental data requests.
-                    </dd>
-                </li>
-
-                <li class="result product">
-                    <div class="container">
-                        <img class="icon" src="./svg/webfilings.svg">
-                    </div>
-                    <h1 class="name">
-                        <a href="http://webfilings.com">WebFilings</a>
-                    </h1>
-                    <h2 class="dates">
-                        June 2013 &#8592; November 2012
-                    </h2>
-                    <dd class="description">
-                        Contributed on a cross-team, enterprise <span class="hashtag">AngularJS</span> product by creating new <span class="hashtag">JavaScript</span> services and helped establish standards for code format and testing.
-                    </dd>
-                </li>
-
-                <li class="result product">
-                    <div class="container">
-                        <img class="icon" src="./svg/pathways.svg">
-                    </div>
-                    <h1 class="name">
-                        <a href="http://pathwaystv.com" class="account">PathwaysTV</a>
-                    </h1>
-                    <h2 class="dates">
-                        October 2012  &#8592; January 2012
-                    </h2>
-                    <p class="description">
-                        Introduced and lead a transition to a product-based business model which, following the migration of existing <span class="hashtag">PHP</span> sites and <span class="hashtag">MySQL</span> databases to a distributed <span class="hashtag">Rails</span> platform, reduced TOC by 80%.
-                    </p>
-                </li>
-
-                <li class="result product">
-                    <div class="container">
-                        <img class="icon" src="./svg/imemories.svg">
-                    </div>
-                    <h1 class="name">
-                        <a class="company" href="http://imemories.com">iMemories</a>
-                    </h1>
-                    <h2 class="dates">
-                         September 2011 &#8592; December 2010
-                    </h2>
-                    <p class="description">
-                        Lead effort to rebuild a Flash-based photo and video library application in <span class="hashtag">HTML5</span>, with help of Google Chrome Frame, by building a custom <span class="hashtag">BackboneJS</span>-inspired framework.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-</script>
+</div>
 
 
 <script type="text/javascript" src="//use.typekit.net/dxz3qpm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-<script src="./vendor/handlebars/handlebars.min.js"></script>
-<script src="./vendor/jquery/dist/jquery.min.js"></script>
-<script src="./vendor/ember/ember.js"></script>
-<script src="./vendor/ember-data/ember-data.js"></script>
-
-<script src="./js/ember.js"></script>
 
 </body>
 </html>
