@@ -40,6 +40,7 @@ body {
     font-weight: 500;*/
 }
 
+.header > .container,
 .section > .container {
     max-width: 928px;
     min-width: 680px;
@@ -102,7 +103,7 @@ body {
 
 #header {
     background-color: #00aeff;
-    padding: 3em .5em 1.5em;
+    padding: 4.5em .5em 1.5em;
 }
 
 #header a {
@@ -147,12 +148,12 @@ body {
 
 
 
-#content .header {
-    background-color: rgb(242, 244, 245);
+#content .container {
+    text-align: left;
 }
 
 #content .header .container {
-    padding: 4.5em 0 3em 0;
+    padding: 4.5em 0 1.5em 0;
 }
 
 #content .header p {
@@ -172,7 +173,7 @@ body {
     margin-top: 4.5em;
 }
 
-#content .section.header {
+#content .section:first-of-type {
     margin-top: 0;
 }
 
