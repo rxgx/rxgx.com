@@ -106,18 +106,8 @@ article > .container {
 
 
 
-#content .header p {
-    font-size: 1.25em;
-    font-weight: 300;
-    line-height: 1.5em;
-}
 
-#content .header .headline {
-    font-size: 2.5em;
-    font-weight: 300;
-    letter-spacing: -1px;
-    line-height: 1.125em;
-}
+
 
 #content .section {
     margin-top: 4.5em;
@@ -127,19 +117,30 @@ article > .container {
     margin-top: 0;
 }
 
-#content .section .heading {
+
+
+
+.section .headline {
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.125em;
+}
+
+.section .heading {
+    margin-top: 3em;
     border-bottom: 1px solid lightgray;
     font: 700 1.25em 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
-#content .products {
+.section .products {
     width: 100%;
     margin-top: 3em;
     overflow: hidden;
 }
 
-#content .product {
+.section .product {
     width: 31%;
     margin-left: 3.5%;
     box-sizing: border-box;
@@ -149,11 +150,15 @@ article > .container {
     text-align: center;
 }
 
-#content .product:first-of-type {
+
+
+
+
+.section .product:first-of-type {
     margin-left: 0;
 }
 
-#content .product .container {
+.section .product .container {
     width: 5em;
     height: 5em;
     border: 3px solid lightgray;
@@ -164,12 +169,12 @@ article > .container {
     transition: border-color .35s ease-in;
 }
 
-#content .product .fa {
+.section .product .fa {
     margin-top: .375em;
     font-size: 3em;
 }
 
-#content .product .icon {
+.section .product .icon {
     width: 2.25em;
     height: 2.25em;
     margin-top: 1.5em;
@@ -178,25 +183,25 @@ article > .container {
     transition: all .35s ease-in;
 }
 
-#content .product:hover .container {
+.section .product:hover .container {
     background-color: rgba(255, 255, 255, 1);
 }
 
-#content .product:hover .container {
+.section .product:hover .container {
     border-color: #00aeff;
 }
 
-#content .product:hover .icon {
+.section .product:hover .icon {
     width: 3em;
     height: 3em;
     margin-top: 1em;
 }
 
-#content .product:hover strong {
+.section .product:hover strong {
     color: #00aeff;
 }
 
-#content .product .description {
+.section .product .description {
     width: 100%;
     margin-top: 1.5em;
     font-size: .875em;
@@ -204,32 +209,32 @@ article > .container {
     text-align: left;
 }
 
-#content .product .company {
+.section .product .company {
     font-weight: 500;
 }
 
-#content .product .dates {
+.section .product .dates {
     margin-top: .5em;
     font: 300 .875em 'Roboto Condensed'
 }
 
-#content .product .name {
+.section .product .name {
     margin-top: 1.5em;
     font-size: 1em;
     font-weight: 500;
     line-height: 1em;
 }
 
-#content #results .product {
+.section .results .product {
     width: 22.5%;
     margin-left: 3.33%;
 }
 
-#content #results .product:first-child {
+.section .results .product:first-child {
     margin-left: 0;
 }
 
-#content #results .product .description {
+.section .results .product .description {
     margin-top: 1em;
 }
 
