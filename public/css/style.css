@@ -134,13 +134,13 @@ article > .container {
     text-transform: uppercase;
 }
 
-.section .products {
+.section .list-items {
     width: 100%;
     margin-top: 3em;
     overflow: hidden;
 }
 
-.section .product {
+.section .list-item {
     width: 31%;
     margin-left: 3.5%;
     box-sizing: border-box;
@@ -154,11 +154,11 @@ article > .container {
 
 
 
-.section .product:first-of-type {
+.section .list-item:first-of-type {
     margin-left: 0;
 }
 
-.section .product .container {
+.section .list-item .container {
     width: 5em;
     height: 5em;
     border: 1px solid lightgray;
@@ -168,12 +168,12 @@ article > .container {
     transition: border-color .35s ease-in;
 }
 
-.section .product .fa {
+.section .list-item .fa {
     margin-top: .375em;
     font-size: 3em;
 }
 
-.section .product .icon {
+.section .list-item .icon {
     width: 2.25em;
     height: 2.25em;
     margin-top: 1.5em;
@@ -182,25 +182,25 @@ article > .container {
     transition: all .35s ease-in;
 }
 
-.section .product:hover .container {
+.section .list-item:hover .container {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.section .product:hover .container {
+.section .list-item:hover .container {
     border-color: #00aeff;
 }
 
-.section .product:hover .icon {
+.section .list-item:hover .icon {
     width: 3em;
     height: 3em;
     margin-top: 1em;
 }
 
-.section .product:hover strong {
+.section .list-item:hover strong {
     color: #00aeff;
 }
 
-.section .product .description {
+.section .list-item .description {
     width: 100%;
     margin-top: 1.5em;
     font-size: .875em;
@@ -208,34 +208,52 @@ article > .container {
     text-align: left;
 }
 
-.section .product .company {
+.section .list-item .company {
     font-weight: 500;
 }
 
-.section .product .dates {
+.section .list-item .dates {
     margin-top: .5em;
     font: 300 .875em 'Roboto Condensed'
 }
 
-.section .product .name {
+.section .list-item .name {
     margin-top: 1.5em;
     font-size: 1em;
     font-weight: 500;
     line-height: 1em;
 }
 
-.section .results .product {
+
+
+
+
+.section .results .list-item {
     width: 22.5%;
     margin-left: 3.33%;
 }
 
-.section .results .product:first-child {
+.section .results .list-item:first-child {
     margin-left: 0;
 }
 
-.section .results .product .description {
+.section .results .list-item .description {
     margin-top: 1em;
 }
+
+
+
+
+
+.section .social-sites .list-item {
+    width: 18.25%;
+    margin-left: 2%;
+}
+
+.section .social-sites .list-item:first-child {
+    margin-left: 0;
+}
+
 
 
 
