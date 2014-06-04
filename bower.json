@@ -16,9 +16,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.0",
-    "ember-data": "1.0.0-beta.7",
-    "font-awesome-bower": "~4.0.3",
-    "react": "~0.10.0"
+    "font-awesome-bower": "~4.1.0"
   },
   "directory": "public/vendor"
 }
