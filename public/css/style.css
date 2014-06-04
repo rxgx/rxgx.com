@@ -24,8 +24,8 @@ a:hover {
 
 body {
     background-color: white;
-    color: rgb(32, 38, 40);
-    font: 300 1em/1.5em Roboto, sans-serif;
+    color: rgb(22, 28, 38);
+    font: 300 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
 }
 
@@ -42,8 +42,8 @@ header > .container,
 article > .container {
     margin: 0 auto;
     padding: 4.5em 0 1.5em 0;
-    max-width: 928px;
-    min-width: 680px;
+    max-width: 728px;
+    min-width: 480px;
     text-align: left;
 }
 
@@ -59,9 +59,8 @@ article > .container {
 
 
 
-
 #header {
-    background-color: #00aeff;
+    padding-top: 3em;
 }
 
 #header a {
@@ -75,19 +74,21 @@ article > .container {
     vertical-align: top;
 }
 
-#header .identity {
-    font-size: 2em;
+#header .identity a {
+    color: rgb(22, 28, 38);
+    font-size: 3em;
     font-style: italic;
     text-transform: uppercase;
 }
 
 #header .menu {
     float: right;
-    font: 500 1em 'Roboto Condensed', 'Helvetica Condensed', sans-serif;
+    font: 500 1em;
 }
 
 #header .menu a {
     border: 1px solid white;
+    color: inherit;
     margin-left: .5em;
     padding: .0625em .5em .1875em;
     box-sizing: border-box;
@@ -110,7 +111,9 @@ article > .container {
 
 
 #content .section {
-    margin-top: 4.5em;
+    border-top: 1px solid #00aeff;
+    margin-top: 6em;
+    padding-top: 6em;
 }
 
 #content .section:first-of-type {
@@ -120,17 +123,16 @@ article > .container {
 
 
 
+
 .section .headline {
-    font-size: 2.5em;
-    font-weight: 300;
-    letter-spacing: -1px;
-    line-height: 1.125em;
+    font: 600 2.5em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
 .section .heading {
     margin-top: 3em;
-    border-bottom: 1px solid lightgray;
-    font: 700 1.25em 'Roboto Condensed', sans-serif;
+    border-bottom: 1px solid rgb(220, 228, 230);
+    font-weight: 600;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -158,9 +160,8 @@ article > .container {
 .section .list-item .container {
     width: 5em;
     height: 5em;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(180, 188, 190);
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, .5);
     text-align: center;
     transition: border-color .25s ease-in;
 }
@@ -181,10 +182,6 @@ article > .container {
 }
 
 .section .list-item:hover .container {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.section .list-item:hover .container {
     border-color: #00aeff;
 }
 
@@ -194,6 +191,7 @@ article > .container {
     margin-top: 1em;
 }
 
+.section .list-item:hover a,
 .section .list-item:hover strong {
     color: #00aeff;
 }
@@ -212,13 +210,13 @@ article > .container {
 
 .section .list-item .dates {
     margin-top: .5em;
-    font: 300 .875em 'Roboto Condensed'
+    font: 300 .875em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
 .section .list-item .name {
     margin-top: 1.5em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1em;
 }
 
@@ -258,9 +256,7 @@ article > .container {
 
 
 #footer {
-    margin-top: 4.5em;
-    padding: 1.5em 0;
-    background-color: whitesmoke;
+    margin-top: 6em;
 }
 
 #footer .container {
@@ -271,9 +267,9 @@ article > .container {
 #footer .copyright,
 #footer .menu {
     margin: 0;
-    color: gray;
+    color: rgb(180, 188, 190);
     display: inline-block;
-    font: 500 1em 'Roboto Condensed', sans-serif;
+    font: 500 1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
     font-weight: 300;
 }
 
@@ -288,16 +284,16 @@ article > .container {
 }
 
 #footer .menu a {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(180, 188, 190);
     margin-left: .5em;
-    padding: .0625em .625em .1875em;
-    color: gray;
+    padding: .125em .625em;
+    color: rgb(180, 188, 190);
     display: inline-block;
     text-decoration: none;
 }
 
 #footer .menu a:hover {
-    background-color: gray;
-    border-color: gray;
+    background-color: rgb(180, 188, 190);
+    border-color: rgb(180, 188, 190);
     color: white;
 }
