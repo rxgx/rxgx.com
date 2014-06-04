@@ -161,17 +161,17 @@ article > .container {
 .section .list-item .container {
     width: 5em;
     height: 5em;
-    border: 1px solid rgb(180, 188, 190);
+    border: 1px solid rgb(90, 94, 95);
     margin: 0 auto;
-    border-radius: .25em;
+    border-radius: .125em;
     text-align: center;
     transition: border-color .25s ease-in;
 }
 
 .section .list-item .fa {
-    margin-top: .375em;
-    font-size: 3em;
-    transition: color .25s ease-in;
+    margin-top: .3825em;
+    font-size: 1.75em;
+    transition: color .25s ease-out;
 }
 
 .section .list-item .icon {
@@ -180,22 +180,23 @@ article > .container {
     margin-top: 1.5em;
     display: inline-block;
     text-align: left;
-    transition: all .25s ease-in;
+    transition: all .375s ease-in;
 }
 
-.section .list-item:hover .container {
+.section .list-item .hitarea:hover .container {
     border-color: #00aeff;
 }
 
-.section .list-item:hover .icon {
+.section .list-item .hitarea:hover .icon {
     width: 3em;
     height: 3em;
     margin-top: 1em;
 }
 
-.section .list-item:hover a,
-.section .list-item:hover strong {
+.section .list-item .hitarea:hover,
+.section .list-item .hitarea:hover strong {
     color: #00aeff;
+    text-decoration: none;
 }
 
 .section .list-item .description {
@@ -219,29 +220,51 @@ article > .container {
     margin-top: 1.5em;
     font-size: 1em;
     font-weight: 600;
-    line-height: 1em;
+    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
 
 
 
 
-.section .results .list-item {
+.section .list-item.result {
     width: 48%;
     margin-left: 4%;
+    text-align: left;
 }
 
-.section .results .list-item:nth-child(2n-1) {
+.section .list-item.result:nth-child(2n-1) {
     margin-left: 0;
 }
 
-.section .results .list-item:nth-child(2n+1) {
+.section .list-item.result:nth-child(2n+1) {
     clear: left;
 }
 
-.section .results .list-item .description {
+.section .list-item.result .container {
+    width: 3em;
+    height: 3em;
+    margin: 0 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section .list-item.result .company {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.section .list-item.result .description {
     margin-top: 1em;
 }
+
+.section .list-item.result .name {
+    margin-top: 0;
+    display: block;
+    font-size: 1.125em;
+}
+
 
 
 
@@ -254,17 +277,30 @@ article > .container {
 
 .section .social-sites .container {
     width: 3em;
-    height: 3em;
+    height: 2.5em;
+    border-width: 1px;
+    display: block;
+}
+
+.section .social-sites .hitarea:hover .container {
+    background-color: #00aeff;
+    border-color: #00aeff;
+    color: white;
+}
+
+.section .social-sites .name {
+    line-height: 2.25em;
 }
 
 .section .social-sites .list-item .fa {
-    margin-top: .5625em;
-    font-size: 1.5em;
+    margin-top: .5em;
+    font-size: 1.25em;
 }
 
 .section .social-sites .list-item:first-child {
     margin-left: 0;
 }
+
 
 
 
