@@ -25,7 +25,7 @@ a:hover {
 body {
     background-color: white;
     color: rgb(22, 28, 38);
-    font: 300 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
+    font: 500 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
 }
 
@@ -41,9 +41,8 @@ footer > .container,
 header > .container,
 article > .container {
     margin: 0 auto;
-    padding: 4.5em 0 1.5em 0;
-    max-width: 728px;
-    min-width: 480px;
+    padding: 4.5em 1.5em 1.5em;
+    width: 680px;
     text-align: left;
 }
 
@@ -52,55 +51,56 @@ article > .container {
     font-weight: 500;*/
 }
 
-
-
-
-
-
-
-
-#header {
-    padding-top: 3em;
+.hitarea {
+    display: inline-block;
 }
 
+
+
+
+
+
+
 #header a {
-    color: white;
     text-decoration: none;
 }
 
 #header .identity,
 #header .menu {
-    display: inline-block;
-    vertical-align: top;
+    width: 50%;
+    float: left;
+    display: block;
 }
 
 #header .identity a {
     color: rgb(22, 28, 38);
-    font-size: 3em;
-    font-style: italic;
+    font: normal 500 4em/1em "muscle-narrow-1", "muscle-narrow-2", sans-serif;
     text-transform: uppercase;
+    transition: color .25s ease-out;
+}
+
+#header .identity a:hover {
+    color: #00aeff;
 }
 
 #header .menu {
-    float: right;
-    font: 500 1em;
+    height: 3em;
+    padding-top: 1em;
+    text-align: right;
 }
 
 #header .menu a {
-    border: 1px solid white;
-    color: inherit;
     margin-left: .5em;
-    padding: .0625em .5em .1875em;
-    box-sizing: border-box;
+    padding: .125em .5em;
+    color: rgb(180, 188, 190);
     display: inline-block;
-    text-decoration: none;
+    font: normal 500 1.25em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    transition: color .25s ease-out;
 }
 
 #header .menu .active a,
 #header .menu a:hover {
-    background-color: white;
-    border-color: white;
-    color: inherit;
+    color: #00aeff;
 }
 
 
@@ -125,7 +125,7 @@ article > .container {
 
 
 .section .headline {
-    font: 600 2.5em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font: normal 700 2.5em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
 .section .heading {
@@ -133,21 +133,22 @@ article > .container {
     border-bottom: 1px solid rgb(220, 228, 230);
     font-weight: 600;
     font-size: 1em;
+    line-height: 1em;
     text-transform: uppercase;
 }
 
 .section .list-items {
     width: 100%;
-    margin-top: 3em;
     overflow: hidden;
 }
 
 .section .list-item {
     width: 31%;
+    margin-top: 1.5em;
     margin-left: 3.5%;
     box-sizing: border-box;
-    list-style: none;
     float: left;
+    list-style: none;
     position: relative;
     text-align: center;
     transition: color .25s ease-in;
@@ -162,6 +163,7 @@ article > .container {
     height: 5em;
     border: 1px solid rgb(180, 188, 190);
     margin: 0 auto;
+    border-radius: .25em;
     text-align: center;
     transition: border-color .25s ease-in;
 }
@@ -198,7 +200,7 @@ article > .container {
 
 .section .list-item .description {
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 1em;
     font-size: .875em;
     font-weight: 300;
     text-align: left;
@@ -225,12 +227,16 @@ article > .container {
 
 
 .section .results .list-item {
-    width: 22.5%;
-    margin-left: 3.33%;
+    width: 48%;
+    margin-left: 4%;
 }
 
-.section .results .list-item:first-child {
+.section .results .list-item:nth-child(2n-1) {
     margin-left: 0;
+}
+
+.section .results .list-item:nth-child(2n+1) {
+    clear: left;
 }
 
 .section .results .list-item .description {
@@ -244,6 +250,16 @@ article > .container {
 .section .social-sites .list-item {
     width: 18.25%;
     margin-left: 2%;
+}
+
+.section .social-sites .container {
+    width: 3em;
+    height: 3em;
+}
+
+.section .social-sites .list-item .fa {
+    margin-top: .5625em;
+    font-size: 1.5em;
 }
 
 .section .social-sites .list-item:first-child {
@@ -269,8 +285,7 @@ article > .container {
     margin: 0;
     color: rgb(180, 188, 190);
     display: inline-block;
-    font: 500 1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
-    font-weight: 300;
+    font: normal 500 1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
 #footer .copyright {
@@ -293,7 +308,7 @@ article > .container {
 }
 
 #footer .menu a:hover {
-    background-color: rgb(180, 188, 190);
-    border-color: rgb(180, 188, 190);
+    background-color: #00aeff;
+    border-color: #00aeff;
     color: white;
 }
