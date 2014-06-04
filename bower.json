@@ -15,8 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.0",
     "font-awesome-bower": "~4.1.0"
-  },
-  "directory": "public/vendor"
+  }
 }
