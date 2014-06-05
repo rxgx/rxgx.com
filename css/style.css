@@ -324,6 +324,7 @@ article > .container {
 
 #footer .copyright,
 #footer .menu {
+    width: 49%;
     margin: 0;
     color: rgb(180, 188, 190);
     display: inline-block;
@@ -331,12 +332,10 @@ article > .container {
 }
 
 #footer .copyright {
-    width: 34%;
     text-transform: uppercase;
 }
 
 #footer .menu {
-    width: 65%;
     text-align: right;
 }
 
