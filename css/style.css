@@ -42,7 +42,7 @@ header > .container,
 article > .container {
     margin: 0 auto;
     padding: 4.5em 1.5em 1.5em;
-    width: 680px;
+    width: 640px;
     text-align: left;
 }
 
@@ -303,6 +303,11 @@ article > .container {
 }
 
 
+
+
+.section.contact p .fa {
+    margin-right: .125em;
+}
 
 
 
