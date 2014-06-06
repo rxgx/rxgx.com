@@ -20,7 +20,7 @@
         </div>
     </section-->
 
-    <header id="header">
+    <header id="header" class="header">
         <div class="container">
             <h1 class="identity">
                 <a href="/">RXGX</a>
@@ -30,6 +30,11 @@
                 <a href="#about"><span>About</span></a>
                 <a href="#resume">Experience</a>
                 <a href="#contact">Contact</a>
+            </nav>
+
+            <nav class="contact print-only">
+                <a href="mailto:ryan@rxgx.com"><i class="fa fa-envelope"></i> ryan@rxgx.com</a>
+                <a href="tel:6024927949"><i class="fa fa-phone"></i> 602-492-RXGX</a>
             </nav>
         </div>
     </header>
@@ -41,7 +46,7 @@
                 <h1 class="headline">Ryan Gasparini, User Interface Engineer</h1>
 
                 <p>
-                    Ryan Gasparini is a web architect in Phoenix, Arizona who gets all-jazzed-up over design, technology, and the Internets. Starting as a self taught HTML tag wrangler and CSS styler, he dabbled in the academics of NetWare and Windows NT but soon found his niche writing JavaScript and ActionScript.
+                    Ryan is a web architect in Phoenix, Arizona who gets all-jazzed-up over design, technology, and the Internets. Starting as a self taught HTML tag wrangler and CSS styler, he dabbled in the academics of NetWare and Windows NT but soon found his niche writing JavaScript and ActionScript.
                 </p>
                 <p>
                     He&rsquo;s torn between his two loves: design and programming. When it comes to web sites and applications, he doesn&rsquo;t care if he&rsquo;s writing the JavaScript for the interface or Ruby for the services. After all, one wants to have an API and consume it, too.
@@ -102,18 +107,30 @@
 
 
             <a name="resume"></a>
-            <section class="skill-list section">
-                <h1 class="headline">A dynamic guy for the static quo.</h1>
+
+            <div class="header print-page-break">
+                <div class="identity">
+                    <a href="/">RXGX</a>
+                </div>
+
+                <div class="contact">
+                    <a href="mailto:ryan@rxgx.com"><i class="fa fa-envelope"></i> ryan@rxgx.com</a>
+                    <a href="tel:6024927949"><i class="fa fa-phone"></i> 602-492-RXGX</a>
+                </div>
+            </div>
+
+            <section class="resume section">
+                <h1 class="headline"><span class="print-only">Ryan Gasparini&mdash;</span>A dynamic guy for the static quo</h1>
 
                 <p class="intro">
                     Ryan&rsquo;s goal is to collaborate with a team in the building of ambitious Web-based projects.
-                    He has over ten years experience in deploying web projects to clients and employers in the software and advertising industries.
+                    He has over ten years experience in deploying web projects for the enterprise and small businesses in the software and advertising industries.
                 </p>
 
                 <h2 class="heading">Featured Skills</h2>
 
                 <ul class="list-items skills">
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/design.svg">
                         </div>
@@ -121,7 +138,7 @@
                             <strong>Product design</strong>, user experience, interface design, and functional prototypes. Starts as pen &amp; paper sketches; finshes as flexible layouts.
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/browser.svg">
                         </div>
@@ -129,7 +146,7 @@
                             Built <strong>HTML5 applications</strong> with future-forward JavaScript frameworks, <span class="hashtag">Ember</span> and <span class="hashtag">React</span>; legacy with <span class="hashtag">Angular</span> and <span class="hashtag">Backbone</span>.
                         </p>
                     </li>
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/development.svg">
                         </div>
@@ -140,7 +157,7 @@
                 </ul>
 
                 <ul class="list-items skills">
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/database.svg">
                         </div>
@@ -149,16 +166,16 @@
                         </p>
                     </li>
 
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/deploy.svg">
                         </div>
                         <p class="description">
-                            Setup and management of <strong>version control software</strong> like Git and Mercurial. Introduced branching, merging, and pull request policies.
+                            Setup and managed <strong>version control software</strong> like Git and Mercurial. Introduced branching, merging, and pull request policies.
                         </p>
                     </li>
 
-                    <li class="list-item">
+                    <li class="skill list-item">
                         <div class="container">
                             <img class="icon" src="/svg/agile.svg">
                         </div>
@@ -245,11 +262,14 @@
             <a name="contact"></a>
             <section class="contact section">
                 <h1 class="headline">Contact Ryan Gasparini</h1>
-                <p>If you're looking to hire a front-end developer or UI engineer for your team, please contact Ryan via email at
+
+                <p>
+                    If you're looking to hire a front-end developer or UI engineer for your team, please contact Ryan via email at
                     <a href="mailto:ryan@rxgx.com"><i class="fa fa-envelope"></i>ryan@rxgx.com</a> or call <a href="tel:6024927949"><i class="fa fa-phone"></i>602-492-RXGX</a>. You can also follow him around the Internets at the websites below.
+                </p>
 
                 <ul class="social-sites list-items">
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://facebook.com/ryangasparini">
                             <div class="container">
                                 <i class="fa fa-facebook"></i>
@@ -258,7 +278,7 @@
                         </a>
                     </li>
 
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://github.com/rxgx">
                             <div class="container">
                                 <i class="fa fa-github"></i>
@@ -267,7 +287,7 @@
                         </a>
                     </li>
 
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://plus.google.com/+ryangasparini">
                             <div class="container">
                                 <i class="fa fa fa-google-plus"></i>
@@ -276,7 +296,7 @@
                         </a>
                     </li>
 
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://linkedin.com/in/ryangasparini">
                             <div class="container">
                                 <i class="fa fa-linkedin"></i>
@@ -285,7 +305,7 @@
                         </a>
                     </li>
 
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://stackoverflow.com/users/265807/rxgx">
                             <div class="container">
                                 <i class="fa fa-stack-overflow"></i>
@@ -294,7 +314,7 @@
                         </a>
                     </li>
 
-                    <li class="list-item">
+                    <li class="social-site list-item">
                         <a class="hitarea" href="http://twitter.com/rxgx">
                             <div class="container">
                                 <i class="fa fa-twitter"></i>
@@ -305,7 +325,6 @@
                 </ul>
 
                 <h2 class="heading">Colophon</h2>
-
                 <p>
                     The experience and social media icons are provided by <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> by Fort Awesome.
                     The icons on the about section are from "Streamline&mdash;Free" by <a href="http://www.webalys.com">Webalys</a>.
