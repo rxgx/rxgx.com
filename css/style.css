@@ -23,11 +23,16 @@ a:hover {
 }
 
 body {
-    margin-bottom: 3em;
     background-color: white;
     color: rgb(22, 28, 38);
     font: 500 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
+}
+
+@media screen {
+    body {
+        margin-bottom: 3em;
+    }
 }
 
 #layout {
@@ -52,40 +57,45 @@ body {
     display: inline-block;
 }
 
-
-
-
-
-
-#header a {
-    text-decoration: none;
+.print-page-break,
+.print-only {
+    display: none;
 }
 
-#header .identity,
-#header .menu {
-    width: 50%;
-    float: left;
-    display: block;
+
+
+
+
+
+
+.header .contact,
+.header .identity,
+.header .menu {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-#header .identity a {
-    color: rgb(22, 28, 38);
-    font: normal 500 4em/1em "muscle-narrow-1", "muscle-narrow-2", sans-serif;
-    text-transform: uppercase;
-    transition: color .25s ease-out;
+.header .contact {
+    display: none;
 }
 
-#header .identity a:hover {
-    color: #00aeff;
-}
-
-#header .menu {
-    height: 3em;
-    padding-top: 1em;
+.header .contact,
+.header .menu {
     text-align: right;
 }
 
-#header .menu a {
+.header .menu {
+    height: 3em;
+    padding-top: 1em;
+}
+
+.header .contact a {
+    margin-left: .5em;
+    font-size: .875em;
+}
+
+.header .menu a {
     margin-left: .25em;
     padding: .25em .75em;
     color: rgb(180, 188, 190);
@@ -94,10 +104,27 @@ body {
     transition: color .25s ease-out;
 }
 
-#header .menu .active a,
-#header .menu a:hover {
+.header .menu .active a,
+.header .menu a:hover {
     color: #00aeff;
 }
+
+.header a {
+    text-decoration: none;
+}
+
+.header .identity a {
+    color: rgb(22, 28, 38);
+    font: normal 500 4em/1em "muscle-narrow-1", "muscle-narrow-2", sans-serif;
+    text-transform: uppercase;
+    transition: color .25s ease-out;
+}
+
+.header .identity a:hover {
+    color: #00aeff;
+}
+
+
 
 
 
@@ -126,10 +153,10 @@ body {
 
 .section .heading {
     margin-top: 4.5em;
-    border-bottom: 1px solid rgb(220, 228, 230);
+    border-bottom: 2px solid rgb(220, 228, 230);
     font-weight: 600;
-    font-size: 1em;
-    line-height: 1em;
+    font-size: .875em;
+    line-height: .875em;
     text-transform: uppercase;
 }
 
@@ -270,12 +297,12 @@ body {
 
 
 
-.section .social-sites .list-item {
+.section .list-item.social-site {
     width: 16%;
     margin-left: .75%;
 }
 
-.section .social-sites .container {
+.section .list-item.social-site .container {
     width: 3em;
     height: 2.5em;
     border: 0;
@@ -285,26 +312,26 @@ body {
     transition: background-color .25s ease-out;
 }
 
-.section .social-sites .hitarea:hover .container {
+.section .list-item.social-site .hitarea:hover .container {
     background-color: #00aeff;
     border-color: #00aeff;
     color: white;
 }
 
-.section .social-sites a {
+.section .list-item.social-site a {
     transition: color .25s ease-out;
 }
 
-.section .social-sites .name {
+.section .list-item.social-site .name {
     line-height: 2.25em;
 }
 
-.section .social-sites .list-item .fa {
+.section .list-item.social-site .fa {
     margin-top: .5em;
     font-size: 1.25em;
 }
 
-.section .social-sites .list-item:first-child {
+.section .list-item.social-site:first-child {
     margin-left: 0;
 }
 
@@ -362,23 +389,52 @@ body {
 
 
 @media print {
+    body {
+        font-size: .75em;
+    }
+
+    .print-page-break,
+    .print-only {
+        display: inherit;
+    }
+
+    a.print-only,
+    span.print-only,
+    strong.print-only {
+        display: inline;
+    }
+
+    .print-page-break {
+        padding-top: 1.5em;
+        page-break-before: always;
+    }
+
     #content > .container,
     #footer > .container,
     #header > .container {
         margin-top: 1.5em;
     }
 
-    #header .identity a {
-        font-size: 2.5em;
+    #header .contact,
+    .header.print-page-break .contact {
+        display: inline-block !important;
+        line-height: 1.5em;
     }
 
+    .header .identity a {
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+
+    #content .contact,
+    #footer,
     #header .menu {
         display: none;
     }
 
     #content .section {
         margin-top: 1.5em;
-        padding-top: 1.5em;
+        padding-top: 3em;
     }
 
     .section .headline {
@@ -386,14 +442,15 @@ body {
     }
 
     .section .heading {
-        margin-top: 1.5em;
+        margin-top: 3em;
     }
 
     .section .list-item {
         margin-top: 1.5em;
     }
 
-    #footer .menu {
-        display: none;
+    .section .list-item.result .container,
+    .section .list-item.social-site .container {
+        color: inherit;
     }
 }
