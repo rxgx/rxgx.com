@@ -23,42 +23,35 @@ a:hover {
 }
 
 body {
+    margin-bottom: 3em;
     background-color: white;
     color: rgb(22, 28, 38);
     font: 500 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
 }
 
-@media screen {
-    body {
-        margin-bottom: 3em;
-    }
-}
+
+
+
 
 #layout {
     width: 100%;
 }
 
-
-
-
-
 #content > .container,
 #footer > .container,
 #header > .container {
+    width: 720px;
     margin: 6em auto 0 auto;
+    padding: 0 1.5em;
     overflow: hidden;
     text-align: left;
 }
 
-@media screen {
-    #content > .container,
-    #footer > .container,
-    #header > .container {
-        width: 720px;
-        padding: 0 1.5em;
-    }
-}
+
+
+
+
 
 .hitarea {
     display: inline-block;
@@ -230,7 +223,6 @@ body {
     -webkit-transform: scale(1.05, 1.05);
 }
 
-/*.section .list-item .hitarea:hover */
 .list-items .hitarea:hover .name {
     color: #00aeff;
 }
@@ -376,79 +368,4 @@ body {
     background-color: #00aeff;
     border-color: #00aeff;
     color: white;
-}
-
-
-
-
-
-@media print {
-    * {
-        -webkit-transition: none;
-        transition: none;
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    body {
-        font-size: .75em;
-    }
-
-    .print-page-break,
-    .print-only {
-        display: inherit;
-    }
-
-    a.print-only,
-    span.print-only,
-    strong.print-only {
-        display: inline;
-    }
-
-    .print-page-break {
-        padding-top: 1.5em;
-        page-break-before: always;
-    }
-
-    #content > .container,
-    #footer > .container,
-    #header > .container {
-        margin-top: 1.5em;
-    }
-
-    .header .contact {
-        display: inline-block;
-        line-height: 1.5em;
-    }
-
-    .header .identity a {
-        font-size: 2.5em;
-        line-height: 1.5em;
-    }
-
-    #contact,
-    #footer,
-    #header .menu {
-        display: none;
-    }
-
-    #content .section {
-        margin-top: 1.5em;
-        padding-top: 3em;
-    }
-
-    .section .headline {
-        font-size: 1.5em;
-    }
-
-    .list-items .list-item {
-        margin-top: 1.5em;
-    }
-
-    .list-items .icon {
-        border: 1px solid rgb(44, 56, 66);
-        background: none;
-        color: rgb(44, 56, 66);
-    }
-
 }
