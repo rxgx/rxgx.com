@@ -197,7 +197,7 @@ body {
     margin-left: 0;
 }
 
-.list-items .container {
+.list-items .icon {
     width: 3.5em;
     height: 2.75em;
     margin: 0 auto;
@@ -221,7 +221,7 @@ body {
     text-decoration: none;
 }
 
-.list-items .hitarea:hover .container {
+.list-items .hitarea:hover .icon {
     /*border-color: #00aeff;*/
     background-color: #00aeff;
     border-color: #00aeff;
@@ -265,7 +265,7 @@ body {
 
 
 
-.results .container {
+.results .icon {
     margin: 0 .5em;
     display: inline-block;
     vertical-align: middle;
@@ -311,7 +311,7 @@ body {
     margin-left: .75%;
 }
 
-.social-sites .container {
+.social-sites .icon {
     width: 3em;
     height: 2.5em;
     background-color: rgb(44, 56, 66);
@@ -445,7 +445,7 @@ body {
         margin-top: 1.5em;
     }
 
-    .list-items .container {
+    .list-items .icon {
         border: 1px solid rgb(44, 56, 66);
         background: none;
         color: rgb(44, 56, 66);
