@@ -1,0 +1,50 @@
+
+ _____ __ __ _____ __ __
+| __  |  |  |   __|  |  |
+|    -|-   -|  |  |-   -|
+|__|__|__|__|_____|__|__|
+
+RXGX is Ryan Gasparini
+
+http://facebook.com/ryangasparini
+http://github.com/rxgx
+http://linkedin.com/in/ryangasparini
+http://twitter.com/rxgx
+
+
+
+Technology
+----------
+
+Github Pages
+https://pages.github.com
+
+HTML5
+http://www.w3.org/TR/html5/
+
+CSS3
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+
+Bower
+http://bower.io
+
+TypeKit
+http://typekit.com
+
+
+
+Fonts
+-----
+
+Muscle Narrow
+Proxima Nova
+Proxima Nova Condensed
+
+
+
+
+Icons
+-----
+
+FontAwesome Icons by Fort Awesome.
+http://fortawesome.github.io/Font-Awesome/
