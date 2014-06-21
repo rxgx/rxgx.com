@@ -37,8 +37,13 @@ FONTS
 -----
 
 Muscle Narrow
+https://typekit.com/fonts/muscle-narrow
+
 Proxima Nova
+https://typekit.com/fonts/proxima-nova
+
 Proxima Nova Condensed
+https://typekit.com/fonts/proxima-nova-condensed
 
 
 
