@@ -4,16 +4,16 @@
 |    -|-   -|  |  |-   -|
 |__|__|__|__|_____|__|__|
 
-RXGX is Ryan Gasparini
-
-http://facebook.com/ryangasparini
-http://github.com/rxgx
-http://linkedin.com/in/ryangasparini
-http://twitter.com/rxgx
 
 
 
-Technology
+
+Ryan Gasparini a.k.a. RXGX
+User Interface Engineer
+
+
+
+TECHNOLOGY
 ----------
 
 Github Pages
@@ -33,7 +33,7 @@ http://typekit.com
 
 
 
-Fonts
+FONTS
 -----
 
 Muscle Narrow
@@ -42,9 +42,8 @@ Proxima Nova Condensed
 
 
 
-
-Icons
+ICONS
 -----
 
-FontAwesome Icons by Fort Awesome.
+Font Awesome
 http://fortawesome.github.io/Font-Awesome/
