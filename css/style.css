@@ -34,13 +34,16 @@ body {
 
 
 
-#layout {
+#layout,
+#header,
+#marquee {
     width: 100%;
 }
 
 #content > .container,
 #footer > .container,
-#header > .container {
+#header > .container,
+#marquee > .container {
     width: 720px;
     margin: 6em auto 0 auto;
     padding: 0 1.5em;
@@ -48,7 +51,15 @@ body {
     text-align: left;
 }
 
+#marquee > .container {
+    margin-top: 0;
+    padding: 3em 0;
+}
 
+#marquee {
+    background-color: #39f;
+    display: none;
+}
 
 
 

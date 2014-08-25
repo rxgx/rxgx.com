@@ -1,0 +1,62 @@
+#clock {
+}
+
+#clock .base,
+#clock .body,
+#clock .button {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#clock .base {
+    width: 65%;
+    height: 1em;
+    background-color: gray;
+    border-radius: 0 0 .375em;
+}
+
+#clock .body {
+    width: 75%;
+    height: 12em;
+    border: .5em solid white;
+    background-color: black;
+    border-radius: 1em;
+}
+
+#clock .button {
+    width: 50%;
+    background-color: orange;
+    height: .5em;
+    border-radius: .25em .25em 0 0;
+}
+
+#clock .lines {
+    width: 10%;
+    margin: 1.75em 2em 0 0;
+    float: right;
+}
+
+#clock .line {
+    border-top: 1px solid white;
+    margin-bottom: 2em;
+}
+
+#clock .display {
+    width: 75%;
+    margin: 2em 0 0 1.5em;
+    float: left;
+}
+
+#clock .meridan,
+#clock .number {
+    width: 20%;
+    height: 8em;
+    background-color: rgb(60, 60, 60);
+    border-radius: .25em;
+    display: inline-block;
+}
+
+#clock .meridan {
+    width: 2.5%;
+    background-color: transparent;
+}
