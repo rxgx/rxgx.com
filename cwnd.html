@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>cwnd equation</title>
+    <meta charset="utf8">
+    <style>
+        td { line-height: 1.5em; }
+        .equation {
+            border: 1px solid lightgray;
+            padding: 1em 4em;
+        }
+        .fraction { text-align: center }
+        .fraction .top { border-bottom: 1px solid gray; }
+        .bracket { font-size: 2em }
+        .group { font-size: 1.25em }
+    </style>
+</head>
+<body>
+
+<table class="equation">
+    <tr>
+        <td>
+            RTT &times;
+            <span class="bracket">[</span>
+            <em>log</em><sub>2</sub>
+            <span class="group">(</span>
+        </td>
+        <td>
+            <table class="fraction">
+                <tr>
+                    <td class="top">N</td>
+                </tr>
+                <tr>
+                    <td class="bottom">initial cwnd</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <span class="group">)</span>
+            <span class="bracket">]</span>
+            &equals; Time to reach cwnd
+        </td>
+    </tr>
+</table>
+
+<p class="field">
+    <label for="latencyField">Roundtrip time</label>
+    <input id="latencyField" type="number" value="56">
+    ms
+</p>
+
+<p class="field">
+    <label for="bytesField">Client and service receive windows</label>
+    <input id="bytesField" type="number" value="64">
+    kb
+</p>
+
+<p class="field">
+    <label for="congestionField">Initial congestion window</label>
+    <input id="congestionField" type="number" value="4">
+    segments
+</p>
+
+
+<div id="result"></div>
+
+<script src="http://fb.me/react-0.11.2.min.js"></script>
+<script src="http://fb.me/JSXTransformer-0.11.2.js"></script>
+
+<script>
+/** @jsx React.DOM */
+var App = {},
+    DOM = React.DOM;
+
+App.Model = {
+    getState: function() {
+        var bytes   = document.getElementById('bytesField').value,
+            latency = document.getElementById('latencyField').value,
+            cwnd    = document.getElementById('congestionField').value,
+
+        bytes = (bytes * 1024) / 1460;
+
+        var result = latency * (Math.log2( bytes / cwnd ));
+
+console.log(latency, '*', 'log2', bytes, "/", cwnd, "=", result)
+
+        return {
+            bytes   : bytes,
+            latency : latency,
+            cwnd    : cwnd,
+            result  : result
+        };
+    },
+
+    listen: function() {
+        var inputs = document.querySelectorAll("input"),
+            model = this;
+
+        for (index in inputs) {
+            if (inputs[index] && inputs[index].nodeType) {
+                inputs[index].onchange = function() {
+                    if (typeof model.onChange === 'function') {
+                        model.onChange();
+                    } else {
+                        console.log("onchange", typeof model.onChange);
+                    }
+                }
+            }
+        }
+    },
+
+    subscribe: function(callback) {
+        console.log("callback set", callback)
+        this.onChange = callback;
+    }
+};
+
+App.Equation = React.createClass({
+    componentDidMount: function() {
+        this.props.model.subscribe(this.onChange);
+    },
+
+    getInitialState: function() {
+        return this.props.model.getState();
+    },
+
+    onChange: function() {
+        var state = this.props.model.getState();
+        this.replaceState(state);
+    },
+
+    render: function() {
+        return DOM.table({ className: "equation" }, [
+            DOM.tr({}, [
+                DOM.td({}, [
+                    this.state.latency + ' × ',
+                    DOM.span({ className: "bracket" }, "["),
+                    DOM.em({}, "log"),
+                    DOM.sub({}, 2),
+                    DOM.span({ className: "group" }, "(")
+                ]),
+                DOM.td({},
+                    DOM.table({ className: "fraction" }, [
+                        DOM.tr({}, DOM.td({ className: "top" }, this.state.bytes)),
+                        DOM.tr({}, DOM.td({ className: "bottom"}, this.state.cwnd))
+                    ])
+                ),
+                DOM.td({}, [
+                    DOM.span({ className: "group" }, ")"),
+                    DOM.span({ className: "bracket" }, "]")
+                ]),
+                DOM.td({}, ' = ' + this.state.result)
+            ])
+        ]);
+    }
+});
+
+window.onload = function() {
+    var containerElement = document.getElementById('result');
+    var view = new App.Equation({ model: App.Model });
+    React.renderComponent(view, containerElement);
+    App.Model.listen();
+};
+
+</script>
+
+</body>
+</html>
