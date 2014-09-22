@@ -72,6 +72,12 @@
 var App = {},
     DOM = React.DOM;
 
+if (typeof Math.log2 !== 'function') {
+    Math.log2 = function log2(x) {
+        return Math.log(x) / Math.LN2;
+    };
+}
+
 App.Model = {
     getState: function() {
         var bytes   = document.getElementById('bytesField').value,
@@ -81,8 +87,6 @@ App.Model = {
         bytes = (bytes * 1024) / 1460;
 
         var result = latency * (Math.log2( bytes / cwnd ));
-
-console.log(latency, '*', 'log2', bytes, "/", cwnd, "=", result)
 
         return {
             bytes   : bytes,
