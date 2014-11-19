@@ -23,11 +23,16 @@ a:hover {
 }
 
 body {
+    height: 100%;
     margin-bottom: 3em;
     background-color: white;
     color: rgb(22, 28, 38);
     font: 500 1em/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
+}
+
+html {
+    height: 100%;
 }
 
 
@@ -37,6 +42,7 @@ body {
 #layout,
 #header,
 #marquee {
+  height: 100%;
     width: 100%;
 }
 
@@ -57,8 +63,9 @@ body {
 }
 
 #marquee {
+    height: 100%;
     background-color: #39f;
-    display: none;
+    /*display: none;*/
 }
 
 
