@@ -3,12 +3,12 @@
 <head lang="en">
     <title>Ryan Gasparini: A user interface engineer (JavaScript) in Phoenix, Arizona</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/clock.css">
-    <link rel="stylesheet" href="/css/print.css" media="print">
-    <link rel="stylesheet" href="/vendor/font-awesome-bower/css/font-awesome.css">
-    <link rel="stylesheet" href="/vendor/pictonic/css/pictonic.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <link rel="stylesheet" href="./vendor/font-awesome-bower/css/font-awesome.css">
+    <link rel="stylesheet" href="./vendor/pictonic/css/pictonic.css">
 </head>
 <body>
 
@@ -16,23 +16,74 @@
     <div id="marquee">
         <div class="container">
             <div id="clock">
-                <div class="button"></div>
+                <div class="buttons">
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                </div>
+
                 <div class="body">
-                    <div class="display">
-                        <div class="number"></div>
-                        <div class="number"></div>
-                        <div class="meridan"></div>
-                        <div class="number"></div>
-                        <div class="number"></div>
-                    </div>
-                    <div class="lines">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
+                    <div class="trim">
+                        <div class="container">
+                            <div class="display">
+                                <div class="number">
+                                  <span id="hours" class="text"></span>
+                                </div>
+
+                                <div class="meridan"></div>
+
+                                <div class="number">
+                                  <span id="minutes" class="text">11</span>
+                                </div>
+                            </div>
+
+                            <div class="radio">
+                                <div class="indicator"></div>
+
+                                <dl class="stations">
+                                    <dd class="label">FM</dd>
+                                    <dd class="station">88</dd>
+                                    <dd class="station">92</dd>
+                                    <dd class="station">96</dd>
+                                    <dd class="station">100</dd>
+                                    <dd class="station">105</dd>
+                                    <dd class="station">108</dd>
+                                    <dd class="label">MHz</dd>
+                                </dl>
+
+                                <div class="wave"></div>
+
+                                <dl class="stations">
+                                    <dd class="label">AM</dd>
+                                    <dd class="station">54</dd>
+                                    <dd class="station">60</dd>
+                                    <dd class="station">70</dd>
+                                    <dd class="station">80</dd>
+                                    <dd class="station">100</dd>
+                                    <dd class="station">120</dd>
+                                    <dd class="station">140</dd>
+                                    <dd class="station">160</dd>
+                                    <dd class="label">KHz</dd>
+                                </dl>
+                            </div>
+
+                            <div class="branding">
+                                <div class="logo">
+                                    <a class="hitarea" href="/">RXGX</a>
+                                </div>
+
+                                <div class="label">
+                                    <span class="text">FM&mdash;AM &nbsp; SOLID STATE &nbsp; DIGIMAGIC</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="dial">
+
+                </div>
+
                 <div class="base"></div>
             </div>
         </div>
@@ -316,6 +367,7 @@
 
 <script src="//use.typekit.net/dxz3qpm.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -324,6 +376,37 @@
 
   ga('create', 'UA-55252-1', 'rxgx.com');
   ga('send', 'pageview');
+</script>
+
+<script>
+window.onload = function() {
+    var hoursElement   = document.getElementById('hours'),
+        minutesElement = document.getElementById('minutes');
+
+    function updateTime() {
+        var date    = new Date(),
+            minutes = date.getMinutes().toString(),
+            hours   = date.getHours(),
+            meridan = 'am';
+
+
+        if (minutes.length < 2) {
+            minutes = '0' + minutes;
+        }
+
+        if (hours > 12) {
+            hours = hours - 12;
+            meridan = 'pm';
+        }
+
+        hoursElement.innerText = hours;
+        minutesElement.innerText = minutes;
+    }
+
+    setInterval(updateTime, 750);
+
+    updateTime();
+}
 </script>
 
 </body>
