@@ -26,7 +26,7 @@
 }
 
 #clock .body {
-    width: 97%;
+    width: 96.5%;
     padding: 1em;
     background-color: rgb(31, 28, 29);
     border-radius: .25em;
@@ -57,14 +57,13 @@
 }
 
 #clock .dial {
-    width: 3%;
+    width: 3.5%;
     height: 8em;
-    border-left: 1px solid gray;
-    border-right: 1px solid darkgray;
+    border-right: 1px solid rgb(147, 145, 146);
     margin-top: 2.8125em;
     background-color: gray;
-    background-image: linear-gradient(180deg, transparent 50%, rgba(179, 181, 195, .5) 50%);
-    background-size: 50px 10px;
+    background-image: linear-gradient(to bottom, rgba(238,238,238,.5) 10%,rgba(204,204,204,.5) 90%);
+    background-size: 50px 20px;
     box-sizing: border-box;
     float: right;
 }
@@ -102,7 +101,7 @@
     margin-right: 5%;
     background-color: rgb(235, 218, 201);
     border-radius: .125em .125em 0 0;
-    box-shadow: inset 0 0 2px rgb(240, 219, 206);
+    box-shadow: inset 0 0 3px rgb(240, 219, 206);
     box-sizing: border-box;
     float: left;
     position: relative;
@@ -115,6 +114,12 @@
     left: 0;
     background-color: rgba(123, 123, 123, .3);
     position: absolute;
+}
+
+#clock .button:first-of-type {
+    background-color: rgb(157, 155, 156);
+    border-bottom-color: darkgray;
+    box-shadow: inset 0 0 3px rgb(187, 185, 186);
 }
 
 #clock .button:last-of-type {
@@ -131,21 +136,19 @@
 
 /* DISPLAY SPECIFICS */
 
-#clock .meridan,
+#clock .separator,
 #clock .number {
-    width: 46%;
     height: 6em;
-    border-radius: .25em;
     float: left;
 }
 
-#clock .meridan {
+#clock .separator {
     width: 8%;
     position: relative;
 }
 
-#clock .meridan:after,
-#clock .meridan:before {
+#clock .separator:after,
+#clock .separator:before {
     content: '';
     width: .5em;
     height: .625em;
@@ -157,28 +160,52 @@
     position: absolute;
 }
 
-#clock .meridan:after {
+#clock .separator:after {
     bottom: 1.5em;
 }
 
-#clock .meridan:before {
+#clock .separator:before {
     top: 1.5em;
 }
 
 #clock .number {
+    width: 44%;
+    border-top: .25em solid rgb(36, 34, 35);
+    border-bottom: .25em solid rgb(36, 34, 35);
+    padding: .25em;
     background-color: rgb(40, 42, 45);
+    box-sizing: border-box;
+    display: table;
     position: relative;
     text-align: center;
     z-index: 0;
 }
 
+#clock .number.hours {
+    width: 48%;
+}
+
+#clock .number:after {
+    content: '';
+    top: -.5em;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: .75em solid rgb(25, 22, 24);
+    border-left: .25em solid transparent;
+    border-right: .25em solid transparent;
+    margin-left: -.3875em;
+    position: absolute;
+}
+
 #clock .number:before {
-    content: ' ';
+    content: '';
     top: 50%;
+    left: 0;
     width: 100%;
-    height: .125em;
-    border-top: 1px solid rgb(65, 66, 68);
-    border-bottom: 1px solid rgb(90, 91, 93);
+    height: 2px;
+    border-top: 1px solid rgb(55, 56, 58);
+    border-bottom: 1px solid rgb(70, 71, 73);
     margin-top: -.125em;
     background-color: black;
     display: block;
@@ -196,11 +223,19 @@
     margin-top: .125em;
 }*/
 
+#clock .number .meridian,
 #clock .number .text {
-    width: 100%;
+    display: table-cell;
+}
+
+#clock .number .meridian {
+    color: white;
+    font: normal 1em 'HelveticaNeue-CondensedBold';
+}
+
+#clock .number .text {
     height: 1em;
     color: rgb(240, 241, 243);
-    display: block;
     font: normal 5em 'HelveticaNeue-CondensedBold';
     letter-spacing: -1px;
     line-height: 1em;
@@ -208,8 +243,6 @@
 }
 
 #clock .number:first-of-type .text {
-    padding-right: .125em;
-    box-sizing: border-box;
     text-align: right;
 }
 
@@ -257,16 +290,16 @@
 #clock .indicator {
     top: 0;
     left: 25%;
-    width: .25em;
+    width: .1875em;
     height: 100%;
-    background-color: rgb(88, 66, 53);
+    background-color: rgb(139, 73, 33);
     position: absolute;
 }
 
 #clock .indicator:before,
 #clock .indicator:after {
     top: 0;
-    width: .5em;
+    width: .625em;
     height: 100%;
     background-color: rgba(255, 255, 255, .15);
     content: ' ';
@@ -275,11 +308,11 @@
 }
 
 #clock .indicator:after {
-    right: -.5em;
+    right: -.625em;
 }
 
 #clock .indicator:before {
-    left: -.5em;
+    left: -.625em;
 }
 
 #clock .stations {
