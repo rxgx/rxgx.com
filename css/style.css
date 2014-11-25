@@ -459,4 +459,15 @@ html {
         max-width: 75%;
     }
 
+    .footer .copyright,
+    .footer .menu {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .footer .menu a {
+        margin: .5em;
+    }
 }
