@@ -353,7 +353,7 @@ html {
 }
 
 .social-items .list-item .text {
-    padding: .25em .5em;
+    padding: .5em .75em;
     display: table-cell;
     font: 500 1.25em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
     text-align: left;
