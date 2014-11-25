@@ -89,6 +89,7 @@ html {
 
 .marquee {
     background-color: #39f;
+    overflow: hidden;
 }
 
 .skills {
@@ -417,6 +418,10 @@ html {
 
 
 @media screen and (max-width: 680px) {
+    .marquee .headline {
+        font-size: 2em;
+    }
+
     .section:not(.marquee) > .container {
         padding: 3rem;
         font-size: 1.25rem;
