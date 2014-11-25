@@ -109,7 +109,7 @@
                     <div class="base"></div>
                 </div>
 
-                <h3 class="headline">An adventure in white-space and&nbsp;time</h3>
+                <h3 class="headline">An adventure in <span id="noun">white</span>-space and&nbsp;time</h3>
             </div>
         </section>
 
@@ -452,9 +452,9 @@ window.onload = function() {
             meridian = 'pm';
         }
 
-        hoursElement.innerText = hours;
+        hoursElement.innerText    = hours;
         meridianElement.innerText = meridian;
-        minutesElement.innerText = minutes;
+        minutesElement.innerText  = minutes;
     }
 
     setInterval(updateTime, 750);
