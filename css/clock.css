@@ -1,5 +1,6 @@
 #clock {
-    margin-top: 25%;
+    width: 758px;
+    margin: 25% auto 0;
     cursor: default;
 
     -webkit-touch-callout: none;
