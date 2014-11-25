@@ -69,6 +69,12 @@ html {
     padding: 3em 0;
 }
 
+.marquee .headline {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, .25);
+    text-align: center;
+}
+
 
 .contact {
     background-color: gray;
@@ -309,8 +315,13 @@ html {
 
 
 
-.social-items .list-item {
+.social-items {
     width: 25%;
+    margin: 3rem auto 0;
+}
+
+.social-items .list-item {
+    width: 100%;
     margin: 1.5rem 0 0 0;
     border: 1px solid whitesmoke;
     display: table;
