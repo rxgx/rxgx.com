@@ -262,7 +262,7 @@
 }
 
 #clock .logo .hitarea {
-    font: normal 500 1.25em/1em 'muscle-narrow-1', 'muscle-narrow-2', sans-serif;
+    font: normal 700 1.25em/1em 'aviano-slab-1', 'aviano-slab-2', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
@@ -270,7 +270,7 @@
 
 #clock .branding .label .text {
     font-size: .6125em;
-    letter-spacing: .25em;
+    letter-spacing: .375em;
     line-height: 1em;
 }
 
