@@ -425,8 +425,17 @@ html {
 
 @media screen and (max-width: 680px) {
 
-    .section:not(.marquee) > .container {
+    .section > .container {
         padding: 2rem;
+    }
+
+    .marquee > .container {
+        padding: 2rem 3rem;
+    }
+
+    .marquee #clock {
+        margin-left: -50%;
+        transform: scale(.5, .5);
     }
 
     .container > .heading {
