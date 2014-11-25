@@ -272,6 +272,10 @@ html {
     font-weight: 500;
 }
 
+.list-items .content {
+    margin-top: .75em;
+}
+
 .list-items .dates {
     margin-top: 0;
     font: 300 .875em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
@@ -325,7 +329,7 @@ html {
 
 .social-items .list-item {
     width: 100%;
-    margin: 1.5rem 0 0 0;
+    margin: 2em 0 0 0;
     display: block;
 }
 
@@ -405,4 +409,27 @@ html {
 .footer .menu a:hover {
     background-color: rgb(180, 188, 190);
     color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    .section:not(.marquee) > .container {
+        padding: 3rem;
+        font-size: 1.25rem;
+    }
+
+    .list-items .list-item {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    .list-item .icon {
+        width: 20%;
+        padding: 0 1.5em 0 0;
+    }
 }
