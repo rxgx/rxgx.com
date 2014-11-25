@@ -69,7 +69,7 @@ html {
 
 .marquee .headline {
     margin-top: 2rem;
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .5);
     text-align: center;
 }
 
