@@ -67,6 +67,10 @@ html {
 
 
 
+.marquee .container {
+    padding-top: 25%;
+}
+
 .marquee .headline {
     margin-top: 2rem;
     color: rgba(255, 255, 255, .5);
@@ -243,10 +247,12 @@ html {
 }
 
 .list-items .icon {
+    width: 25%;
     margin: 0 auto;
     padding-right: 1.5em;
     color: rgba(255, 255, 255, .85);
     display: table-cell;
+    text-align: center;
     transition: all .25s ease-in;
     -webkit-transform-style: preserve-3d;
     vertical-align: middle;
@@ -418,13 +424,17 @@ html {
 
 
 @media screen and (max-width: 680px) {
-    .marquee .headline {
-        font-size: 2em;
-    }
 
     .section:not(.marquee) > .container {
-        padding: 3rem;
-        font-size: 1.25rem;
+        padding: 2rem;
+    }
+
+    .container > .heading {
+        font-size: 1.5em;
+    }
+
+    .marquee .headline {
+        font-size: 2em;
     }
 
     .list-items .list-item {
@@ -433,8 +443,8 @@ html {
         float: none;
     }
 
-    .list-item .icon {
-        width: 20%;
-        padding: 0 1.5em 0 0;
+    .social-items {
+        max-width: 75%;
     }
+
 }
