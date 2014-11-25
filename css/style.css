@@ -31,42 +31,64 @@ body {
     text-align: center;
 }
 
+dt, dd { border:1px solid black;}
+
 html {
     height: 100%;
 }
 
 
 
-
-
+#content,
 #layout,
-#header,
-#marquee {
-  height: 100%;
+#content > .section {
+    height: 100%;
     width: 100%;
 }
 
-#content > .container,
-#footer > .container,
-#header > .container,
-#marquee > .container {
-    width: 720px;
-    margin: 6em auto 0 auto;
-    padding: 0 1.5em;
+#content > .section {
+    padding-top: 4rem;
+    box-sizing: border-box;
+}
+
+
+
+
+.section > .container {
+    width: 80vw;
+    margin: 6rem auto 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
     overflow: hidden;
     text-align: left;
 }
 
-#marquee > .container {
+.marquee > .container {
+    width: 758px;
     margin-top: 0;
     padding: 3em 0;
 }
 
-#marquee {
-    height: 100%;
-    background-color: #39f;
-    /*display: none;*/
+
+.contact {
+    background-color: gray;
 }
+
+.resume {
+    background-color: rgb(224, 78, 78);
+}
+
+.marquee {
+    background-color: #39f;
+}
+
+.skills {
+    background-color: rgb(109, 175, 76);
+}
+
+
+
+
 
 
 
@@ -153,92 +175,78 @@ html {
 
 
 
-
-#content .section {
-    border-top: 1px solid #00aeff;
-    margin-top: 6em;
-    padding-top: 6em;
-}
-
-#content .section:first-of-type {
-    margin-top: 0;
-}
-
-
-
-
-
 .section .headline {
-    font: normal 700 2.5em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font: normal 700 3em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
-.section .heading {
-    margin-top: 4.5em;
-    border-bottom: 2px solid rgb(220, 228, 230);
-    font-weight: 600;
-    font-size: .875em;
-    line-height: .875em;
+.section .title {
+    margin-top: .75em;
+    color: gray;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
-.section .list-items {
+.section .heading {
+    border-bottom: 1px solid rgbA(255, 255, 255, .375);
+    padding-bottom: 1.5em;
+    color: rgba(255, 255, 255, .5);
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+.list-items {
     width: 100%;
     margin-top: 0;
     overflow: hidden;
 }
 
-
-
-
-
-
-
 .list-items .list-item {
-    width: 31%;
-    margin-top: 3em;
-    margin-left: 3.5%;
+    width: 50%;
+    margin: 2rem 0 0 0;
+    padding: 2rem;
     box-sizing: border-box;
+    color: rgba(255, 255, 255, .75);
+    display: table;
     float: left;
     list-style: none;
-    text-align: center;
-    transition: color .25s ease-in;
 }
 
-.list-items .list-item:first-of-type {
-    margin-left: 0;
+.list-items .list-item:hover {
+    color: white;
+}
+
+.list-items .list-item:nth-of-type(2n-1) {
+    padding-left: 0;
+    clear: both;
+}
+
+.list-items .list-item:nth-of-type(2n+0) {
+    padding-right: 0;
 }
 
 .list-items .icon {
-    width: 3.5em;
-    height: 2.75em;
     margin: 0 auto;
-    background-color: rgb(44, 56, 66);
-    border-radius: .125em;
-    box-sizing: border-radius;
-    color: white;
-    text-align: center;
+    padding-right: 1.5em;
+    color: rgba(255, 255, 255, .85);
+    display: table-cell;
     transition: all .25s ease-in;
     -webkit-transform-style: preserve-3d;
+    vertical-align: middle;
 }
 
-.list-items .fa {
-    margin-top: .625em;
-    font-size: 1.25em;
+.list-items .icon .fa {
+    font-size: 3em;
     transition: color .25s ease-in;
-}
-
-.list-items .hitarea {
-    color: inherit;
-    text-decoration: none;
-}
-
-.list-items .hitarea:hover .icon {
-    /*border-color: #00aeff;*/
-    background-color: #00aeff;
-    border-color: #00aeff;
-    color: white;
-    transform: scale(1.05, 1.05);
-    -webkit-transform: scale(1.05, 1.05);
 }
 
 .list-items .hitarea:hover .name {
@@ -247,10 +255,10 @@ html {
 
 .list-items .description {
     width: 100%;
-    margin-top: 1em;
-    font-size: .875em;
+    display: table-cell;
     font-weight: 300;
     text-align: left;
+    vertical-align: middle;
 }
 
 .list-items .company {
@@ -258,16 +266,16 @@ html {
 }
 
 .list-items .dates {
-    margin-top: .5em;
+    margin-top: 0;
     font: 300 .875em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
 }
 
 .list-items .name {
-    margin-top: 1.5em;
-    font-size: 1em;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
     text-decoration: underline;
+    text-transform: uppercase;
     transition: color .2s ease-out;
 }
 
@@ -275,37 +283,21 @@ html {
 
 
 
-.results .icon {
-    margin: 0 .5em;
-    display: inline-block;
-    vertical-align: middle;
+.resume-items .list-item {
+    display: block;
 }
 
-.section .result {
-    width: 48%;
-    margin-left: 4%;
-    text-align: left;
-}
-
-.section .result:nth-child(2n-1) {
-    margin-left: 0;
-}
-
-.section .result:nth-child(2n+1) {
-    clear: left;
-}
-
-.section .result .company {
+.resume-item .company {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
 }
 
-.section.result .description {
+.resume-item .description {
     margin-top: 1em;
 }
 
-.section .result .name {
+.resume-item .name {
     margin-top: 0;
     display: block;
     font-size: 1.125em;
@@ -316,34 +308,32 @@ html {
 
 
 
-.social-sites .list-item {
-    width: 16%;
-    margin-left: .75%;
-}
 
-.social-sites .icon {
-    width: 3em;
-    height: 2.5em;
-    background-color: rgb(44, 56, 66);
-    color: white;
-    display: block;
-    transition: background-color .25s ease-out;
-}
-
-.social-sites .name {
-    line-height: 2.25em;
-}
-
-.social-sites .fa {
-    margin-top: .5em;
-    font-size: 1.25em;
-}
-
-.social-site:first-child {
-    margin-left: 0;
+.social-items .list-item {
+    width: 25%;
+    margin: 1.5rem 0 0 0;
+    border: 1px solid whitesmoke;
+    display: table;
 }
 
 
+.social-items .list-item .fa {
+    width: 25%;
+    border-right: 1px solid whitesmoke;
+    padding: .25em;
+    color: whitesmoke;
+    display: table-cell;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-items .list-item .hitarea {
+    padding: .25em .5em;
+    color: whitesmoke;
+    display: table-cell;
+    font: 500 1.25em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    text-decoration: none;
+}
 
 
 
@@ -351,13 +341,18 @@ html {
 
 
 
-#footer .container {
-    padding-top: 1.5em;
+
+
+
+.footer .container {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1.5em 0;
     overflow: hidden;
 }
 
-#footer .copyright,
-#footer .menu {
+.footer .copyright,
+.footer .menu {
     width: 49%;
     margin: 0;
     color: rgb(180, 188, 190);
@@ -365,15 +360,16 @@ html {
     font: normal 500 1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
-#footer .copyright {
+.footer .copyright {
+    text-align: left;
     text-transform: uppercase;
 }
 
-#footer .menu {
+.footer .menu {
     text-align: right;
 }
 
-#footer .menu a {
+.footer .menu a {
     border: 1px solid rgb(180, 188, 190);
     margin-left: .5em;
     padding: .125em .625em;
@@ -382,7 +378,7 @@ html {
     text-decoration: none;
 }
 
-#footer .menu a:hover {
+.footer .menu a:hover {
     background-color: #00aeff;
     border-color: #00aeff;
     color: white;
