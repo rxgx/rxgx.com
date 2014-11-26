@@ -229,16 +229,22 @@
     display: table-cell;
 }
 
+#clock .number .meridian,
+#clock .number .text {
+    font-family: 'HelveticaNeue-CondensedBold', 'nimbus-sans-condensed-1', 'nimbus-sans-condensed-2', sans-serif;
+}
+
 #clock .number .meridian {
     color: white;
-    font: normal 1em 'HelveticaNeue-CondensedBold';
+    font-size: 1em;
+    font-weight: 700;
 }
 
 #clock .number .text {
     height: 1em;
     color: rgb(240, 241, 243);
-    font: normal 5em 'HelveticaNeue-CondensedBold';
-    letter-spacing: -1px;
+    font-size: 5em;
+    font-weight: 900;
     line-height: 1em;
     z-index: 1;
 }
