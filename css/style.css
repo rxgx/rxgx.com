@@ -121,7 +121,7 @@ html {
 }
 
 .section .heading {
-    border-bottom: 1px solid rgbA(255, 255, 255, .375);
+    border-bottom: 1px solid rgba(255, 255, 255, .375);
     padding-bottom: 1.5em;
     color: rgba(255, 255, 255, .5);
     font-weight: 600;
