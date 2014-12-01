@@ -439,7 +439,11 @@ function onDocumentLoaded() {
         minutesElement  = document.getElementById('minutes');
 
     function displayHours(hours) {
-        return hours > 12 ? hours - 12 : hours;
+        if (hours % 12 === 0) {
+            return 12;
+        } else {
+            return hours > 12 ? hours - 12 : hours;
+        }
     }
 
     function displayMeridian(hours) {
