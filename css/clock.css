@@ -246,7 +246,12 @@
     font-size: 5em;
     font-weight: 900;
     line-height: 1em;
+    text-align: center;
     z-index: 1;
+}
+
+#clock .number:first-of-type {
+    padding-right: .5em;
 }
 
 #clock .number:first-of-type .text {
