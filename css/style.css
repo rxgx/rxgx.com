@@ -53,9 +53,6 @@ html {
     box-sizing: border-box;
 }
 
-
-
-
 .section > .container {
     padding: 6rem;
     box-sizing: border-box;
@@ -63,17 +60,6 @@ html {
 }
 
 
-
-
-.marquee .container {
-    padding-top: 25%;
-}
-
-.marquee .headline {
-    margin-top: 2rem;
-    color: rgba(255, 255, 255, .5);
-    text-align: center;
-}
 
 
 
@@ -119,70 +105,6 @@ html {
 
 
 
-.header {
-    overflow: hidden;
-}
-
-.header .contact,
-.header .identity,
-.header .menu {
-    width: 50%;
-    float: left;
-}
-
-.header .contact {
-    display: none;
-}
-
-.header .contact,
-.header .menu {
-    float: right;
-    text-align: right;
-}
-
-.header .menu {
-    height: 3em;
-    padding-top: 1em;
-}
-
-.header .contact a {
-    margin-left: .5em;
-    font-size: .875em;
-}
-
-.header .menu a {
-    margin-left: .25em;
-    padding: .25em .75em;
-    color: rgb(180, 188, 190);
-    display: inline-block;
-    font: normal 500 1.25em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
-    transition: color .25s ease-out;
-}
-
-.header .menu .active a,
-.header .menu a:hover {
-    color: #00aeff;
-}
-
-.header a {
-    text-decoration: none;
-}
-
-.header .identity a {
-    color: rgb(22, 28, 38);
-    font: normal 500 4em/1em "muscle-narrow-1", "muscle-narrow-2", sans-serif;
-    text-transform: uppercase;
-    transition: color .25s ease-out;
-}
-
-.header .identity a:hover {
-    color: #00aeff;
-}
-
-
-
-
-
 
 
 
@@ -210,6 +132,27 @@ html {
 }
 
 
+
+
+
+
+
+#content > .section.marquee {
+    display: table;
+}
+
+.marquee > .container {
+    width: 100%;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.marquee .headline {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
 
 
 
@@ -427,16 +370,8 @@ html {
         padding: 2rem;
     }
 
-    .marquee > .container {
-        padding: 2rem 3rem;
-    }
-
     .marquee #clock {
-        margin-left: -50%;
-        transform: scale(.5, .5);
-        -moz-transform: scale(.5, .5);
-        -ms-transform: scale(.5, .5);
-        -webkit-transform: scale(.5, .5);
+        display: none;
     }
 
     .container > .heading {
