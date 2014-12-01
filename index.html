@@ -431,36 +431,55 @@
 </script>
 
 <script>
-window.onload = function() {
-    var hoursElement    = document.getElementById('hours'),
+function onDocumentLoaded() {
+    var currentHours,
+        currentMinutes,
+        hoursElement    = document.getElementById('hours'),
         meridianElement = document.getElementById('meridian'),
         minutesElement  = document.getElementById('minutes');
 
-    function updateTime() {
-        var date    = new Date(),
-            minutes = date.getMinutes().toString(),
-            hours   = date.getHours(),
-            meridian = 'am';
+    function displayHours(hours) {
+        return hours > 12 ? hours - 12 : hours;
+    }
 
+    function displayMeridian(hours) {
+        return hours > 12 ? 'pm' : 'am';
+    }
+
+    function displayMinutes(minutes) {
+        minutes = minutes.toString();
 
         if (minutes.length < 2) {
             minutes = '0' + minutes;
         }
 
-        if (hours > 12) {
-            hours = hours - 12;
-            meridian = 'pm';
-        }
-
-        hoursElement.innerHTML    = hours;
-        meridianElement.innerHTML = meridian;
-        minutesElement.innerHTML  = minutes;
+        return minutes;
     }
 
-    setInterval(updateTime, 750);
+    function updateTime() {
+        var date     = new Date(),
+            minutes  = date.getMinutes(),
+            hours    = date.getHours();
+
+        if (minutes === currentMinutes && hours === currentHours) {
+            return false;
+        }
+
+        hoursElement.innerHTML    = displayHours(hours);
+        meridianElement.innerHTML = displayMeridian(meridian);
+        minutesElement.innerHTML  = displayMinutes(minutes);
+
+        currentHours   = hours;
+        currentMinutes = minutes;
+    }
+
+    setInterval(updateTime, 1500);
 
     updateTime();
 }
+
+window.onload = onDocumentLoaded;
+
 </script>
 
 </body>
