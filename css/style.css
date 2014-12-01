@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #00aeff;
+    color: rgb(22, 28, 38);
 }
 
 body {
@@ -138,6 +138,7 @@ html {
 
 
 #content > .section.marquee {
+    height: 100%;
     display: table;
 }
 
