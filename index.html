@@ -452,9 +452,9 @@ window.onload = function() {
             meridian = 'pm';
         }
 
-        hoursElement.innerText    = hours;
-        meridianElement.innerText = meridian;
-        minutesElement.innerText  = minutes;
+        hoursElement.innerHTML    = hours;
+        meridianElement.innerHTML = meridian;
+        minutesElement.innerHTML  = minutes;
     }
 
     setInterval(updateTime, 750);
