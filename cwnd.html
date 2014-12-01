@@ -3,66 +3,91 @@
 <head>
     <title>cwnd equation</title>
     <meta charset="utf8">
+    <link rel="stylesheet" href="css/base.css">
     <style>
-        td { line-height: 1.5em; }
-        .equation {
-            border: 1px solid lightgray;
-            padding: 1em 4em;
+        body {
+            font: normal 100% Helvetica, Arial, sans-serif;
+            text-align: center;
         }
-        .fraction { text-align: center }
+        figure, p { margin: 0 0 1.5em 0; font-size: 1em; }
+        figure { width: 100%; border: 1px solid lightgray; }
+        td { line-height: 1.5em; }
+        #layout {
+            width: 32em;
+            margin: 4em auto 0;
+            text-align: left;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+        .equation {
+            margin: 0 auto;
+            padding: 1em 4em;
+            text-align: left;
+        }
+        .fraction { text-align: center; }
         .fraction .top { border-bottom: 1px solid gray; }
-        .bracket { font-size: 2em }
-        .group { font-size: 1.25em }
+        .bracket { font-size: 2em; }
+        .group { font-size: 1.25em; }
     </style>
 </head>
 <body>
 
-<table class="equation">
-    <tr>
-        <td>
-            RTT &times;
-            <span class="bracket">[</span>
-            <em>log</em><sub>2</sub>
-            <span class="group">(</span>
-        </td>
-        <td>
-            <table class="fraction">
+<article id="layout">
+    <section class="section">
+        <figure class="figure">
+            <table class="equation">
                 <tr>
-                    <td class="top">N</td>
-                </tr>
-                <tr>
-                    <td class="bottom">initial cwnd</td>
+                    <td>
+                        RTT &times;
+                        <span class="bracket">[</span>
+                        <em>log</em><sub>2</sub>
+                        <span class="group">(</span>
+                    </td>
+                    <td>
+                        <table class="fraction">
+                            <tr>
+                                <td class="top">N</td>
+                            </tr>
+                            <tr>
+                                <td class="bottom">initial cwnd</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <span class="group">)</span>
+                        <span class="bracket">]</span>
+                        &equals; Time to reach cwnd
+                    </td>
                 </tr>
             </table>
-        </td>
-        <td>
-            <span class="group">)</span>
-            <span class="bracket">]</span>
-            &equals; Time to reach cwnd
-        </td>
-    </tr>
-</table>
+        </figure>
 
-<p class="field">
-    <label for="latencyField">Roundtrip time</label>
-    <input id="latencyField" type="number" value="56">
-    ms
-</p>
+        <p class="field">
+            <label for="latencyField">Roundtrip time</label>
+            <input id="latencyField" type="number" value="56">
+            ms
+        </p>
 
-<p class="field">
-    <label for="bytesField">Client and service receive windows</label>
-    <input id="bytesField" type="number" value="64">
-    kb
-</p>
+        <p class="field">
+            <label for="bytesField">Client and service receive windows</label>
+            <input id="bytesField" type="number" value="64">
+            kb
+        </p>
 
-<p class="field">
-    <label for="congestionField">Initial congestion window</label>
-    <input id="congestionField" type="number" value="4">
-    segments
-</p>
+        <p class="field">
+            <label for="congestionField">Initial congestion window</label>
+            <input id="congestionField" type="number" value="4">
+            segments
+        </p>
+
+        <figure id="result" class="figure"></figure>
+    </section>
+</article>
 
 
-<div id="result"></div>
+
 
 <script src="http://fb.me/react-0.11.2.min.js"></script>
 
@@ -164,6 +189,18 @@ window.onload = function() {
 };
 
 </script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-55252-1', 'rxgx.com');
+ga('send', 'pageview');
+</script>
+
 
 </body>
 </html>
