@@ -1,7 +1,5 @@
 html, body {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 html {
@@ -10,6 +8,7 @@ html {
 
 body {
     color: rgb(25, 25, 25);
+    margin: 0;
 }
 
 button {

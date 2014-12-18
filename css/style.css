@@ -13,6 +13,16 @@
  24  1.5
 */
 
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    color: rgb(42, 45, 48);
+    font: 500 100%/1.5em "Merriweather", Times, serif;
+    text-align: center;
+}
 
 a {
     color: inherit;
@@ -21,211 +31,6 @@ a {
 a:hover {
     color: #39f;
 }
-
-body {
-    height: 100%;
-    margin-bottom: 3em;
-    background-color: whitesmoke;
-    color: rgb(42, 45, 48);
-    font: 500 1em/1.5em "Merriweather", Times, serif;
-    text-align: center;
-}
-
-html {
-    height: 100%;
-}
-
-
-
-
-
-#layout,
-#content {
-    width: auto;
-    height: 100%;
-}
-
-#content > .section {
-    width: 100%;
-    border-bottom: 1px solid rgb(192, 195, 198);
-    padding: 4rem;
-    box-sizing: border-box;
-}
-
-
-
-
-
-
-
-.header.section {
-    background-color: #222;
-    height: 75%;
-}
-
-.header a {
-    text-decoration: none;
-}
-
-.header .container {
-    width: 100%;
-    height: 75%;
-}
-
-.header.section .headline {
-    margin-top: 1.5rem;
-    padding-bottom: 0;
-    color: rgb(212, 213, 215);
-    font: 900 4em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
-    line-height: 1em;
-}
-
-.header .identity {
-    color: rgba(255, 255, 255, .25);
-    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-}
-
-/*
-.header .menu {
-    margin-right: .5em;
-    float: right;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: .05em;
-    text-transform: lowercase;
-}
-
-.header .menu a {
-    display: block;
-    text-align: right;
-}
-
-.header .menu a:hover {
-    background-color: black;
-    color: white;
-    text-align: left;
-}
-*/
-
-
-
-
-
-.display {
-    width: 45%;
-    height: 12em;
-    border: .125em solid gray;
-    margin: 10% auto 0 auto;
-    border-bottom: 0;
-    border-radius: .5em .5em 0 0;
-    overflow: hidden;
-}
-
-.browser {
-    height: 100%;
-    margin: 1em;
-    background-color: white;
-    border-radius: .25em .25em 0 0;
-    clear: both;
-    overflow: hidden;
-    text-align: left;
-}
-
-.browser .addressbar {
-    height: 1.5em;
-    background-color: lightgray;
-}
-
-.browser .menubar {
-    height: 1.5em;
-    padding: 0 .5em;
-    background-color: rgb(155, 152, 154);
-}
-
-.browser .menubar .button {
-    width: .5em;
-    height: .5em;
-    margin: .25em 0 0 .125em;
-    background-color: lightgray;
-    border-radius: .375em;
-    display: inline-block;
-}
-
-.browser .viewport {
-    width: 100%;
-    height: 10em;
-    padding: 1em 2em;
-    background-color: whitesmoke;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.browser .viewport .header {
-    height: 4em;
-    background-color: #bbb;
-}
-
-.browser .viewport .column {
-    width: 65%;
-    height: 5em;
-    border-right: .25em solid whitesmoke;
-    margin-top: .25em;
-    background-color: lightgray;
-    box-sizing: border-box;
-    float: left;
-}
-
-.browser .viewport .column:last-of-type {
-    width: 35%;
-    border-right: 0;
-    float: right;
-}
-
-.browser .viewport .menu {
-    height: 1em;
-    margin-bottom: .25em;
-    background-color: lightgray;
-}
-
-
-
-
-
-
-
-
-
-.about .photo {
-    width: 100%;
-    margin: 0 auto 1.5em;
-    border-radius: 2.5%;
-    overflow: hidden;
-}
-
-.about .photo .image {
-    width: 100%;
-    display: block;
-}
-
-.resume {
-
-}
-
-.header,
-.contact,
-.marquee,
-.skills {
-    background-color: white;
-}
-
-
-
-
-
-
-
 
 .hitarea {
     display: inline-block;
@@ -236,69 +41,48 @@ html {
     display: none;
 }
 
+#layout,
+#content {
+    width: 100%;
+    height: 100%;
+}
 
-
-
-
-
-
-#content > .section.about,
-#content > .section.skills {
-    display: table;
+.section {
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 195, 198);
+    padding: 3em;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: left;
 }
 
-.section > .content,
-.section > .sidebar {
-    display: table-cell;
-    vertical-align: top;
-}
-
-.about > .content {
-    width: 60%;
-}
-
-.about > .sidebar {
-    width: 30%;
-    padding-right: 5%;
-}
-
-.skills > .content {
-    width: 50%;
-    padding-right: 5%;
-}
-
-.skills > .sidebar {
-    width: 40%;
-    padding-left: 5%;
-}
-
-
-
-
-
-
-
-.section > .content p,
-.section > .sidebar p {
+.section > .content > p,
+.section > .sidebar > p {
     font-family: "Merriweather", serif;
     font-size: .8125em;
 }
 
-.section p.note {
-    color: gray;
-    font-size: .75rem;
-    line-height: 1.5rem;
+
+.section > .content > p:first-of-type,
+.section > .sidebar > p:first-of-type {
+    margin-top: 0;
 }
 
-.section > .content p:first-of-type::first-letter {
+.section p.note {
+    color: gray;
+    font-size: .75em;
+    line-height: 1.5em;
+}
+
+.section .content p:first-of-type::first-letter {
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .section .headline {
-    padding-bottom: 1.5rem;
-    font: normal 700 2.5em/1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    margin-bottom: 1.5rem;
+    font: normal 700 2em/1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
 .section .title {
@@ -312,7 +96,7 @@ html {
 }
 
 .section .heading {
-    padding-bottom: 1.5em;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     font-size: 1.5em;
     line-height: 1em;
@@ -328,9 +112,81 @@ html {
 
 
 
-.container > p:first-of-type {
-    margin-top: 0;
+
+
+
+
+
+
+
+
+
+#about,
+#resume {
+    background-color: whitesmoke;
 }
+
+#contact,
+#skills {
+    background-color: white;
+}
+
+#contact,
+#resume {
+    text-align: center;
+}
+
+
+
+
+
+#about .content {
+    width: 60%;
+    float: right;
+}
+
+#about .sidebar {
+    width: 30%;
+    float: left;
+    padding-right: 5%;
+}
+
+#about .sidebar .headline {
+    font-size: 2.5em;
+}
+
+#about .photo {
+    width: 100%;
+    margin: 0 auto 1.5em;
+    border-radius: 2.5%;
+    overflow: hidden;
+}
+
+#about .photo .image {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+#skills .content {
+    width: 50%;
+    float: left;
+    padding-right: 5%;
+}
+
+#skills .sidebar {
+    width: 40%;
+    float: right;
+    padding-left: 5%;
+}
+
+
 
 
 
@@ -358,14 +214,14 @@ html {
 
 .detail .content {
     margin-top: 0;
-    font-size: .8125rem;
+    font-size: .8125em;
 }
 
 .detail .dates {
     margin-top: 0;
     color: darkgray;
     font-family: "proxima-nova-1", "proxima-nova-2", sans-serif;
-    font-size: .75rem;
+    font-size: .75em;
     text-transform: uppercase;
     vertical-align: bottom;
 }
@@ -415,7 +271,7 @@ html {
 }
 
 .skill-icon .fa {
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }
 
 .skill-content {
@@ -423,7 +279,7 @@ html {
 }
 
 .skill-content .name {
-    border-bottom: 3px solid currentColor;
+    border-bottom: 2px solid currentColor;
     font-family: 'proxima-nova-condensed-1', 'proxima-nova-condensed-2', sans-serif;
     font-size: .875em;
     font-weight: 900;
@@ -552,12 +408,12 @@ html {
 
 
 .social-items {
-    margin: 1.5rem auto 0;
+    margin: 1.5em auto 0;
 }
 
 .social-item {
     min-width: 15%;
-    margin: 2em .5em;
+    margin: 2em .5em 0;
     display: inline-block;
 }
 
@@ -581,7 +437,7 @@ html {
     border-right: 1px dashed lightgray;
     padding: .25em 0;
     display: table-cell;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     text-align: center;
 }
 
@@ -617,7 +473,7 @@ html {
     margin: 0;
     color: whitesmoke;
     display: inline-block;
-    font: normal 500 .8125rem "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    font: normal 500 .8125em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
 .footer .copyright {
@@ -631,8 +487,8 @@ html {
 
 .footer .menu a {
     border: 1px solid whitesmoke;
-    margin-left: .5rem;
-    padding: .125rem .625rem;
+    margin-left: .5em;
+    padding: .125em .625em;
     /*background-color: rgb(180, 188, 190);*/
     display: inline-block;
     text-decoration: none;
@@ -641,50 +497,4 @@ html {
 .footer .menu a:hover {
     background-color: white;
     color: rgb(97, 98, 100);
-}
-
-
-
-
-
-
-@media screen and (max-width: 920px) {
-
-    .display {
-        width: 40%;
-    }
-
-    .header.section .headline {
-        font-size: 3em;
-    }
-
-    .detail {
-        width: 95%;
-        box-sizing: border-box;
-    }
-
-    .list-item {
-        width: 100%;
-        padding: 0;
-        float: none;
-    }
-
-    .social-item {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .footer .copyright,
-    .footer .menu {
-        width: 100%;
-        display: block;
-        float: none;
-        text-align: center;
-    }
-
-    .footer .menu a {
-        margin: .5em;
-    }
 }

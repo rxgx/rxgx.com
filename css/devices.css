@@ -1,0 +1,78 @@
+@media screen and (max-width: 920px) {
+    #content {
+        font-size: .875em;
+    }
+
+    #header .display {
+        width: 45%;
+    }
+
+    .detail {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .list-item {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: .75em;
+    }
+
+    #header .display {
+        width: 50%;
+        font-size: .75em;
+    }
+
+    .section {
+        padding: 3em 1.5em;
+    }
+
+    .section .title {
+
+    }
+
+    #about .content,
+    #about .sidebar,
+    #skills .content,
+    #skills .sidebar {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    #about .sidebar,
+    #skills .content {
+        margin-bottom: 3em;
+    }
+
+    #about .photo {
+        width: 35%;
+        margin-right: 1.5em;
+        float: left;
+    }
+
+    #about .note {
+        clear: left;
+    }
+
+    .footer .copyright,
+    .footer .menu {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .footer .menu a {
+        margin: .5em;
+    }
+}

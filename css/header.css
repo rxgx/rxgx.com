@@ -1,0 +1,114 @@
+#header {
+    width: 100%;
+    background-color: #222;
+    display: table;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .container {
+    width: 100%;
+    height: 100%;
+    padding: 20vh 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header .display {
+    width: 35%;
+    height: 12em;
+    border: .125em solid gray;
+    margin: 0 auto;
+    border-bottom: 0;
+    border-radius: .5em .5em 0 0;
+    overflow: hidden;
+}
+
+#header .headline {
+    margin-top: 1.5rem;
+    padding-bottom: 0;
+    color: rgb(212, 213, 215);
+    font-weight: 900;
+    font-size: 3em;
+    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    line-height: 1em;
+}
+
+#header .identity {
+    color: rgba(255, 255, 255, .25);
+    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+
+
+
+.browser {
+    height: 100%;
+    margin: 1em;
+    background-color: white;
+    border-radius: .25em .25em 0 0;
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+}
+
+.browser .addressbar {
+    height: 1.5em;
+    background-color: lightgray;
+}
+
+.browser .menubar {
+    height: 1.5em;
+    padding: 0 .5em;
+    background-color: rgb(155, 152, 154);
+}
+
+.browser .menubar .button {
+    width: .5em;
+    height: .5em;
+    margin: .25em 0 0 .125em;
+    background-color: lightgray;
+    border-radius: .375em;
+    display: inline-block;
+}
+
+.browser .viewport {
+    width: 100%;
+    height: 10em;
+    padding: 1em 2em;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.browser .viewport .header {
+    height: 4em;
+    background-color: #bbb;
+}
+
+.browser .viewport .column {
+    width: 65%;
+    height: 5em;
+    border-right: .25em solid whitesmoke;
+    margin-top: .25em;
+    background-color: lightgray;
+    box-sizing: border-box;
+    float: left;
+}
+
+.browser .viewport .column:last-of-type {
+    width: 35%;
+    border-right: 0;
+    float: right;
+}
+
+.browser .viewport .menu {
+    height: 1em;
+    margin-bottom: .25em;
+    background-color: lightgray;
+}
