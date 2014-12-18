@@ -32,12 +32,12 @@
         font-size: .75em;
     }
 
-    .section {
-        padding: 3em 1.5em;
+    #header .headline {
+        font-size: 3em;
     }
 
-    .section .title {
-
+    .section {
+        padding: 3em 1.5em;
     }
 
     #about .content,
@@ -49,8 +49,7 @@
         float: none;
     }
 
-    #about .sidebar,
-    #skills .content {
+    #about .sidebar {
         margin-bottom: 3em;
     }
 
@@ -62,6 +61,12 @@
 
     #about .note {
         clear: left;
+    }
+
+    .skill {
+        width: 100%;
+        display: block;
+        font-size: .75rem;
     }
 
     .footer .copyright,
