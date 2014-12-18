@@ -30,6 +30,10 @@ ol, p, ul {
     margin-top: 1.5em;
 }
 
+li, p {
+    line-height: 1.5em;
+}
+
 li {
     margin-left: 1.5em;
 }

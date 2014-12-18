@@ -16,7 +16,7 @@
 body {
     background-color: whitesmoke;
     color: rgb(42, 45, 48);
-    font: 500 100%/1.5em "Merriweather", Times, serif;
+    font: 500 100%/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
     text-align: center;
 }
 
@@ -48,7 +48,7 @@ a:hover {
 
 .section {
     width: 100%;
-    border-bottom: 1px solid rgb(192, 195, 198);
+    border-bottom: 1px solid rgb(154, 213, 256);
     padding: 3em;
     background-color: white;
     box-sizing: border-box;
@@ -63,8 +63,7 @@ a:hover {
 
 .section .content > p,
 .section .sidebar > p {
-    font-family: "Merriweather", serif;
-    font-size: .8125em;
+    font-size: .9375em;
 }
 
 
@@ -86,12 +85,12 @@ a:hover {
 
 .section .headline {
     margin-bottom: 1.5rem;
-    font: normal 700 2em/1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    font: normal 700 1.75em/1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
 .section .title {
     margin-bottom: 1.5rem;
-    color: rgb(97, 98, 100);
+    color: rgb(49, 139, 203);
     font: normal 1.125em "Oswald", sans-serif;
     text-transform: uppercase;
     /*-webkit-column-break-after: always;
@@ -127,11 +126,10 @@ a:hover {
 
 #about,
 #resume {
-    background-color: whitesmoke;
+    background-color: rgb(245, 246, 247);
 }
 
-#contact,
-#skills {
+#contact {
     background-color: white;
 }
 
@@ -144,15 +142,18 @@ a:hover {
 
 
 
+
+
+
+
 #about .content {
-    width: 60%;
+    width: 70%;
     float: right;
 }
 
 #about .sidebar {
-    width: 30%;
+    width: 20%;
     float: left;
-    padding-right: 5%;
 }
 
 #about .sidebar .headline {
@@ -177,10 +178,20 @@ a:hover {
 
 
 
+#skills {
+    background-color: rgb(204,234,255);
+}
+
+#skills .content {
+    width: 50%;
+    float: left;
+}
 
 #skills .skills {
-
+    width: 45%;
+    float: right;
 }
+
 
 
 
@@ -228,7 +239,7 @@ a:hover {
 
 .detail .name {
     margin-right: .5em;
-    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    //font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
     font-size: 1.125em;
     font-weight: 700;
     text-decoration: none;
@@ -249,7 +260,7 @@ a:hover {
 }
 
 .skill {
-    width: 33%;
+    width: 50%;
     padding: 1em;
     box-sizing: border-box;
     font-size: 1rem;
@@ -264,13 +275,13 @@ a:hover {
 .skill-icon {
     width: 1.5em;
     padding-right: 1em;
-    display: table-cell;
+    display: none;
     text-align: center;
     vertical-align: top;
 }
 
 .skill-icon .fa {
-    font-size: 1.75em;
+    font-size: 1.25em;
 }
 
 .skill-content {
@@ -278,14 +289,17 @@ a:hover {
 }
 
 .skill-content .name {
-    font-family: 'proxima-nova-condensed-1', 'proxima-nova-condensed-2', sans-serif;
-    font-size: 1em;
+    border-bottom: 1px solid rgb(154, 213, 256);
+    font-size: .75em;
     font-weight: 900;
+    opacity: .8;
+    text-transform: uppercase;
 }
 
 .skill-content p.excerpt {
     margin-top: .5em;
-    font-size: .6875em;
+    color: rgb(49, 139, 203);
+    font-size: .875em;
     line-height: 1.75em;
 }
 
@@ -456,13 +470,15 @@ a:hover {
 
 
 .footer {
-    background-color: rgb(97, 98, 100);
+    width: 100%;
+    background-color: rgb(13, 43, 64);
 }
 
 .footer .container {
-    width: 80vw;
+    max-width: 1024px;
+    border: 0;
     margin: 0 auto;
-    padding: 1.5em 0;
+    padding: 1.5em 3em 3em;
     overflow: hidden;
 }
 
@@ -487,7 +503,7 @@ a:hover {
 .footer .menu a {
     border: 1px solid whitesmoke;
     margin-left: .5em;
-    padding: .125em .625em;
+    padding: .25em .75em;
     /*background-color: rgb(180, 188, 190);*/
     display: inline-block;
     text-decoration: none;
@@ -495,5 +511,5 @@ a:hover {
 
 .footer .menu a:hover {
     background-color: white;
-    color: rgb(97, 98, 100);
+    color: rgb(13, 43, 64);
 }

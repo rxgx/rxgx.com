@@ -43,7 +43,7 @@
     #about .content,
     #about .sidebar,
     #skills .content,
-    #skills .sidebar {
+    #skills .skills {
         width: 100%;
         padding: 0;
         float: none;
