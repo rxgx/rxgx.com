@@ -1,6 +1,6 @@
 @media screen and (max-width: 920px) {
-    #content {
-        font-size: .875em;
+    body {
+        font-size: .9375em;
     }
 
     #header .display {
@@ -18,6 +18,9 @@
         float: none;
     }
 
+    .skill {
+        font-size: .875rem;
+    }
 }
 
 
