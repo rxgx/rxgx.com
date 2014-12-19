@@ -1,10 +1,6 @@
 @media screen and (max-width: 920px) {
     body {
-        font-size: .9375em;
-    }
-
-    #header .display {
-        width: 45%;
+        font-size: .875em;
     }
 
     .detail {
@@ -31,12 +27,7 @@
     }
 
     #header .display {
-        width: 50%;
-        font-size: .75em;
-    }
-
-    #header .headline {
-        font-size: 3em;
+        font-size: .6875em;
     }
 
     .section {
@@ -53,13 +44,13 @@
     }
 
     #about .sidebar {
-        margin-bottom: 3em;
+        width: 75%;
+        margin: 0 auto 3em;
+        text-align: center;
     }
 
     #about .photo {
-        width: 35%;
-        margin-right: 1.5em;
-        float: left;
+        width: 50%;
     }
 
     #about .note {
@@ -70,6 +61,16 @@
         width: 100%;
         display: block;
         font-size: .75rem;
+    }
+
+    .social-items {
+        font-size: .5em;
+        text-align: center;
+    }
+
+    #contact,
+    #resume {
+        text-align: left;
     }
 
     .footer .copyright,

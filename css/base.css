@@ -4,6 +4,7 @@ html, body {
 
 html {
     font: normal 100% Helvetica, Arial, sans-serf;
+    overflow: hidden;
 }
 
 body {
