@@ -133,7 +133,7 @@ a:hover {
 }
 
 #contact {
-    background-color: #F2BB13;
+    background-color: #369AD9;
 }
 
 #contact,
@@ -424,6 +424,9 @@ a:hover {
 
 
 
+#contact .headline {
+  color: white;
+}
 
 .social-items {
     margin: 1.5em auto 0;
@@ -441,21 +444,21 @@ a:hover {
 
 .social-item .hitarea {
     width: 100%;
-    border: 1px solid #F24444;
-    color: #F24444;
+    border: 1px solid white;
+    color: white;
     display: table;
     text-decoration: none;
-    background-color: #f2f2f2;
+    background-color: transparent;
 }
 
 .social-item .hitarea:hover {
-    background-color: whitesmoke;
-    border-color: currentColor;
-    color: currentColor;
+    background-color: white;
+    color: black;
 }
 
 .social-item .hitarea:hover .fa {
-    background-color: rgb(42, 45, 48);
+    background-color: black;
+    color: white;
 }
 
 .social-item .fa {
@@ -463,9 +466,9 @@ a:hover {
     padding: .25em 0;
     display: table-cell;
     /* font-size: 1em; */
-    color: #f2f2f2;
-    text-align: center;
-    background: #F24444;
+    color: #369AD9;
+    text-align: #f2f2f2;
+    background: white;
 }
 
 .social-item .text {
@@ -483,21 +486,21 @@ a:hover {
 
 
 
-.footer {
+#footer {
     width: 100%;
     background-color: #369AD9;
 }
 
-.footer .container {
+#footer .container {
     max-width: 1024px;
-    border: 0;
+    border-top: 1px solid white;
     margin: 0 auto;
     padding: 1.5em 3em 3em;
     overflow: hidden;
 }
 
-.footer .copyright,
-.footer .menu {
+#footer .copyright,
+#footer .menu {
     width: 49%;
     margin: 0;
     color: whitesmoke;
@@ -505,16 +508,16 @@ a:hover {
     font: normal 500 .8125em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
 }
 
-.footer .copyright {
+#footer .copyright {
     text-align: left;
     text-transform: uppercase;
 }
 
-.footer .menu {
+#footer .menu {
     text-align: right;
 }
 
-.footer .menu a {
+#footer .menu a {
     border: 1px solid whitesmoke;
     margin-left: .5em;
     padding: .25em .75em;
@@ -523,7 +526,7 @@ a:hover {
     text-decoration: none;
 }
 
-.footer .menu a:hover {
+#footer .menu a:hover {
     background-color: white;
     color: rgb(13, 43, 64);
 }
