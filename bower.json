@@ -1,11 +1,11 @@
 {
-  "name": "rxgx.com",
-  "version": "1.0.0",
-  "homepage": "http://www.rxgx.com",
+  "name": "ryangasparini.com",
+  "version": "1.0.1",
+  "homepage": "http://www.ryangasparini.com",
   "authors": [
     "Ryan Gasparini <ryan@rxgx.com>"
   ],
-  "description": "RXGX is Ryan Gasparini's Online Portfolio",
+  "description": "Ryan Gasparini's Online Portfolio",
   "license": "MIT",
   "ignore": [
     "**/.*",
