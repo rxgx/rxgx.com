@@ -16,7 +16,8 @@
 body {
     background-color: whitesmoke;
     color: rgb(42, 45, 48);
-    font: 500 100%/1.5em "proxima-nova-1", "proxima-nova-2", sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
     text-align: center;
 }
 
@@ -88,7 +89,7 @@ a:hover {
 
 .section .headline {
     margin-bottom: 1.5rem;
-    font: normal 900 2em/1em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    font: normal 700 2em/1em "Pragati Narrow", sans-serif;
 }
 
 .section .title {
@@ -221,7 +222,6 @@ a:hover {
 
 .detail .company {
     border-bottom: 1px solid rgb(154, 213, 256);
-    font-size: .75em;
     text-transform: uppercase;
 }
 
@@ -231,10 +231,10 @@ a:hover {
 }
 
 .detail .dates {
-    margin-top: 1.5em;
-    color: darkgray;
-    font-family: "proxima-nova-1", "proxima-nova-2", sans-serif;
+    margin-top: .5rem;
+    color: dimgray;
     font-size: .75em;
+    line-height: 2rem;
     text-transform: uppercase;
     vertical-align: bottom;
 }
@@ -245,9 +245,10 @@ a:hover {
 
 .detail .name {
     margin-right: .5em;
-    //font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font-family: "Pragati Narrow", sans-serif;
     font-size: 1.125em;
     font-weight: 700;
+    line-height: 1em;
     text-decoration: none;
     vertical-align: bottom;
 }
@@ -383,13 +384,13 @@ a:hover {
 
 .list-item .dates {
     margin-top: 0;
-    font: 300 .875em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font: 400 .875em "Pragati Narrow", sans-serif;
 }
 
 .list-item .name {
     font-size: 1.75rem;
-    font-weight: 600;
-    font-family: "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font-weight: 700;
+    font-family: "Pragati Narrow", sans-serif;
     text-decoration: underline;
     transition: color .2s ease-out;
 }
@@ -474,8 +475,9 @@ a:hover {
 .social-item .text {
     padding: .5em .75em;
     display: table-cell;
-    font: 900 .8675em "proxima-nova-condensed-1", "proxima-nova-condensed-2", "Helvetica Condensed", sans-serif;
+    font: 700 .9375em "Pragati Narrow", sans-serif;
     text-align: left;
+    text-transform: uppercase;
 }
 
 
@@ -505,7 +507,7 @@ a:hover {
     margin: 0;
     color: whitesmoke;
     display: inline-block;
-    font: normal 500 .8125em "proxima-nova-condensed-1", "proxima-nova-condensed-2", sans-serif;
+    font-size: .8125em;
 }
 
 #footer .copyright {
