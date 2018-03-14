@@ -297,8 +297,9 @@ a:hover {
 
 .skill-content .name {
     border-bottom: 1px solid rgb(154, 213, 256);
-    font-size: .75em;
-    font-weight: 900;
+    font-size: 1em;
+    font-family: 'Pragati Narrow';
+    font-weight: 700;
     text-transform: uppercase;
 }
 
