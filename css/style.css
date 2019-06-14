@@ -83,7 +83,10 @@ a:hover {
 
 .section .headline {
   margin-bottom: 1.5rem;
-  font: normal 700 2em/1em "Pragati Narrow", sans-serif;
+  font-size: 2em;
+  font-family: "PublicSans", sans-serif;
+  font-variation-settings: "wdth" 600, "wght" 98;
+  line-height: 1em;
 }
 
 .section .title {
@@ -201,12 +204,17 @@ a:hover {
 
 .detail .name {
   margin-right: 0.5em;
-  font-family: "Pragati Narrow", sans-serif;
-  font-size: 1.125em;
-  font-weight: 700;
-  line-height: 1em;
+  font-size: 1em;
+  line-height: 1.25em;
   text-decoration: none;
   vertical-align: bottom;
+}
+
+@supports (font-variation-settings: normal) {
+  .detail .name {
+    font-family: "PublicSansVariable", sans-serif;
+    font-variation-settings: "wght" 700;
+  }
 }
 
 .skills {
@@ -245,7 +253,7 @@ a:hover {
 .skill-content .name {
   border-bottom: 1px solid rgb(154, 213, 256);
   font-size: 1em;
-  font-family: "Pragati Narrow";
+  font-family: PublicSans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -325,13 +333,13 @@ a:hover {
 
 .list-item .dates {
   margin-top: 0;
-  font: 400 0.875em "Pragati Narrow", sans-serif;
+  font: 400 0.875em PublicSans, sans-serif;
 }
 
 .list-item .name {
   font-size: 1.75rem;
   font-weight: 700;
-  font-family: "Pragati Narrow", sans-serif;
+  font-family: PublicSans, sans-serif;
   text-decoration: underline;
   transition: color 0.2s ease-out;
 }
@@ -406,7 +414,7 @@ a:hover {
 .social-item .text {
   padding: 0.5em 0.75em;
   display: table-cell;
-  font: 700 0.9375em "Pragati Narrow", sans-serif;
+  font: 700 0.9375em PublicSans, sans-serif;
   text-align: left;
   text-transform: uppercase;
 }
@@ -446,7 +454,6 @@ a:hover {
   border: 1px solid whitesmoke;
   margin-left: 0.5em;
   padding: 0.25em 0.75em;
-  /*background-color: rgb(180, 188, 190);*/
   display: inline-block;
   text-decoration: none;
 }
