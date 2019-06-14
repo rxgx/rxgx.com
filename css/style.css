@@ -84,8 +84,8 @@ a:hover {
 .section .headline {
   margin-bottom: 1.5rem;
   font-size: 2em;
-  font-family: "PublicSans", sans-serif;
-  font-variation-settings: "wdth" 600, "wght" 98;
+  font-family: "PublicSansVariable", sans-serif;
+  font-variation-settings: "wdth" 600, "wght" 400;
   line-height: 1em;
 }
 
@@ -212,7 +212,7 @@ a:hover {
 
 @supports (font-variation-settings: normal) {
   .detail .name {
-    font-family: "PublicSansVariable", sans-serif;
+    font-family: "PublicSansVariable";
     font-variation-settings: "wght" 700;
   }
 }
@@ -252,10 +252,16 @@ a:hover {
 
 .skill-content .name {
   border-bottom: 1px solid rgb(154, 213, 256);
-  font-size: 1em;
-  font-family: PublicSans;
+  font-size: 0.875em;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@supports (font-variation-settings: normal) {
+  .skill-content .name {
+    font-family: "PublicSansVariable";
+    font-variation-settings: "wght" 700;
+  }
 }
 
 .skill-content p.excerpt {
@@ -333,13 +339,13 @@ a:hover {
 
 .list-item .dates {
   margin-top: 0;
-  font: 400 0.875em PublicSans, sans-serif;
+  font: 400 0.875em "PublicSansVariable";
 }
 
 .list-item .name {
   font-size: 1.75rem;
   font-weight: 700;
-  font-family: PublicSans, sans-serif;
+  font-family: "PublicSansVariable";
   text-decoration: underline;
   transition: color 0.2s ease-out;
 }
@@ -414,7 +420,7 @@ a:hover {
 .social-item .text {
   padding: 0.5em 0.75em;
   display: table-cell;
-  font: 700 0.9375em PublicSans, sans-serif;
+  font: 600 0.75em "PublicSansVariable", sans-serif;
   text-align: left;
   text-transform: uppercase;
 }
