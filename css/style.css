@@ -14,522 +14,457 @@
 */
 
 body {
-    background-color: whitesmoke;
-    color: rgb(42, 45, 48);
-    font-size: 100%;
-    line-height: 1.5em;
-    text-align: center;
+  background-color: whitesmoke;
+  color: rgb(42, 45, 48);
+  font-size: 100%;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    color: #39f;
+  color: #39f;
 }
 
 .hitarea {
-    display: inline-block;
+  display: inline-block;
 }
 
 .print-page-break,
 .print-only {
-    display: none;
+  display: none;
 }
 
 #layout {
-    width: 100%;
+  width: 100%;
 }
 
-
-
-
-
-
 .section {
-    width: 100%;
-    padding: 3em;
-    background-color: white;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: left;
+  width: 100%;
+  padding: 3em;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
 }
 
 .section:last-of-type {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .section > .container {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .section .content > p,
 .section .sidebar > p {
-    font-size: .9375em;
+  font-size: 0.9375em;
 }
-
 
 .section .content > p:first-of-type,
 .section .sidebar > p:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .section p.note {
-    color: gray;
-    font-size: .75em;
-    line-height: 1.5em;
+  color: gray;
+  font-size: 0.75em;
+  line-height: 1.5em;
 }
 
 .section .content p:first-of-type::first-letter {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .section .headline {
-    margin-bottom: 1.5rem;
-    font: normal 700 2em/1em "Pragati Narrow", sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 2em;
+  font-family: "PublicSansVariable", sans-serif;
+  font-variation-settings: "wdth" 600, "wght" 400;
+  line-height: 1em;
 }
 
 .section .title {
-    margin-bottom: 1.5rem;
-    color: rgb(49, 139, 203);
-    font-size: 1.125em;
-    /* text-transform: lowercase; */
-    /*-webkit-column-break-after: always;
+  margin-bottom: 1.5rem;
+  color: rgb(49, 139, 203);
+  font-size: 1.125em;
+  /* text-transform: lowercase; */
+  /*-webkit-column-break-after: always;
     page-break-after: always;
     break-after: always;*/
 }
 
 .section .heading {
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1em;
-    text-align: center;
-    text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #about,
 #resume {
-    background-color: white;
+  background-color: white;
 }
 
 #contact {
-    background-color: #369AD9;
+  background-color: #369ad9;
 }
 
 #contact,
 #resume {
-    text-align: center;
+  text-align: center;
 }
 
-
-
-
-
-
-
-
-
 #about .content {
-    width: 65%;
-    float: right;
+  width: 65%;
+  float: right;
 }
 
 #about .sidebar {
-    width: 25%;
-    float: left;
+  width: 25%;
+  float: left;
 }
 
 #about .intro strong {
-    color: rgb(49, 139, 203);
+  color: rgb(49, 139, 203);
 }
 
 #about .photo {
-    width: 100%;
-    margin: 0 auto 1.5em;
-    border-radius: 15%;
-    overflow: hidden;
+  width: 100%;
+  margin: 0 auto 1.5em;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 #about .photo .image {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
-
-
-
-
-
-
 #skills {
-    border-top: 1px solid rgb(154, 213, 256);
-    border-bottom: 1px solid rgb(154, 213, 256);
-    background-color: rgb(204,234,255);
+  border-top: 1px solid rgb(154, 213, 256);
+  border-bottom: 1px solid rgb(154, 213, 256);
+  background-color: rgb(204, 234, 255);
 }
 
 #skills .content {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 #skills .skills {
-    width: 45%;
-    float: right;
+  width: 45%;
+  float: right;
 }
 
-
-
-
-
-
-
-
 .resume .container {
-    clear: both;
-    overflow: hidden;
+  clear: both;
+  overflow: hidden;
 }
 
 .detail {
-    width: 45.75%;
-    margin: 2%;
-    padding: 1em;
-    box-sizing: border-box;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
+  width: 45.75%;
+  margin: 2%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
 }
 
 .detail .company {
-    border-bottom: 1px solid rgb(154, 213, 256);
-    text-transform: uppercase;
+  border-bottom: 1px solid rgb(154, 213, 256);
+  text-transform: uppercase;
 }
 
 .detail .content {
-    margin-top: 0;
-    font-size: .875em;
+  margin-top: 0;
+  font-size: 0.875em;
 }
 
 .detail .dates {
-    margin-top: .5rem;
-    color: dimgray;
-    font-size: .75em;
-    line-height: 2rem;
-    text-transform: uppercase;
-    vertical-align: bottom;
+  margin-top: 0.5rem;
+  color: dimgray;
+  font-size: 0.75em;
+  line-height: 2rem;
+  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 .detail .fa {
-    display: none;
+  display: none;
 }
 
 .detail .name {
-    margin-right: .5em;
-    font-family: "Pragati Narrow", sans-serif;
-    font-size: 1.125em;
-    font-weight: 700;
-    line-height: 1em;
-    text-decoration: none;
-    vertical-align: bottom;
+  margin-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-decoration: none;
+  vertical-align: bottom;
 }
 
-
-
-
-
-
-
-
-
+@supports (font-variation-settings: normal) {
+  .detail .name {
+    font-family: "PublicSansVariable";
+    font-variation-settings: "wght" 700;
+  }
+}
 
 .skills {
-    font-size: 0;
+  font-size: 0;
 }
 
 .skill {
-    width: 50%;
-    padding: 1em;
-    box-sizing: border-box;
-    font-size: 1rem;
-    display: inline-block;
-    vertical-align: top;
+  width: 50%;
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .skill-container {
-    display: table;
+  display: table;
 }
 
 .skill-icon {
-    width: 1.5em;
-    padding-right: 1em;
-    display: none;
-    text-align: center;
-    vertical-align: top;
+  width: 1.5em;
+  padding-right: 1em;
+  display: none;
+  text-align: center;
+  vertical-align: top;
 }
 
 .skill-icon .fa {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .skill-content {
-    display: table-cell;
+  display: table-cell;
 }
 
 .skill-content .name {
-    border-bottom: 1px solid rgb(154, 213, 256);
-    font-size: 1em;
-    font-family: 'Pragati Narrow';
-    font-weight: 700;
-    text-transform: uppercase;
+  border-bottom: 1px solid rgb(154, 213, 256);
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@supports (font-variation-settings: normal) {
+  .skill-content .name {
+    font-family: "PublicSansVariable";
+    font-variation-settings: "wght" 700;
+  }
 }
 
 .skill-content p.excerpt {
-    margin-top: .5em;
-    color: rgb(49, 139, 203);
-    font-size: .875em;
-    line-height: 1.75em;
+  margin-top: 0.5em;
+  color: rgb(49, 139, 203);
+  font-size: 0.875em;
+  line-height: 1.75em;
 }
 
-
-
-
-
-
-
-
 .list-items {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    overflow: hidden;
-    text-align: left;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  overflow: hidden;
+  text-align: left;
 }
 
 .list-item {
-    width: 50%;
-    margin: 2rem 0 0 0;
-    padding: 2rem;
-    box-sizing: border-box;
-    display: table;
-    float: left;
-    list-style: none;
+  width: 50%;
+  margin: 2rem 0 0 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: table;
+  float: left;
+  list-style: none;
 }
 
 .list-item:nth-of-type(2n-1) {
-    padding-left: 0;
-    clear: both;
+  padding-left: 0;
+  clear: both;
 }
 
-.list-item:nth-of-type(2n+0) {
-    padding-right: 0;
+.list-item:nth-of-type(2n + 0) {
+  padding-right: 0;
 }
 
 .list-item .figure {
-    margin: 1em 1em 1em 0;
-    display: table-cell;
-    float: left;
-    text-align: center;
+  margin: 1em 1em 1em 0;
+  display: table-cell;
+  float: left;
+  text-align: center;
 }
 
 .list-item .icon {
-    width: 3em;
-    height: 3em;
-    border: 3px solid gray;
-    border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  border: 3px solid gray;
+  border-radius: 50%;
 }
 
 .list-item .icon .fa {
-    font-size: 1.5em;
-    line-height: 3rem;
+  font-size: 1.5em;
+  line-height: 3rem;
 }
 
 .list-item .hitarea:hover .name {
-    color: #00aeff;
+  color: #00aeff;
 }
 
 .list-item .description {
-    width: 100%;
-    display: table-cell;
-    font-weight: 300;
-    text-align: left;
-    vertical-align: middle;
+  width: 100%;
+  display: table-cell;
+  font-weight: 300;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .list-item .company {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .list-item .content {
-    margin-top: .75em;
+  margin-top: 0.75em;
 }
 
 .list-item .dates {
-    margin-top: 0;
-    font: 400 .875em "Pragati Narrow", sans-serif;
+  margin-top: 0;
+  font: 400 0.875em "PublicSansVariable";
 }
 
 .list-item .name {
-    font-size: 1.75rem;
-    font-weight: 700;
-    font-family: "Pragati Narrow", sans-serif;
-    text-decoration: underline;
-    transition: color .2s ease-out;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: "PublicSansVariable";
+  text-decoration: underline;
+  transition: color 0.2s ease-out;
 }
 
-
-
-
-
-
 .resume-items .list-item {
-    display: block;
+  display: block;
 }
 
 .resume-item .company {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .resume-item .description {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .resume-item .name {
-    margin-top: 0;
-    display: block;
-    font-size: 1.125em;
+  margin-top: 0;
+  display: block;
+  font-size: 1.125em;
 }
-
-
-
-
-
 
 #contact .headline {
   color: white;
 }
 
 .social-items {
-    margin: 1.5em auto 0;
+  margin: 1.5em auto 0;
 }
 
 .social-item {
-    min-width: 15%;
-    margin: 1.5em 0 0 .75em;
-    display: inline-block;
+  min-width: 15%;
+  margin: 1.5em 0 0 0.75em;
+  display: inline-block;
 }
 
 .social-item:first-of-type {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .social-item .hitarea {
-    width: 100%;
-    border: 1px solid white;
-    color: white;
-    display: table;
-    text-decoration: none;
-    background-color: transparent;
+  width: 100%;
+  border: 1px solid white;
+  color: white;
+  display: table;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .social-item .hitarea:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .social-item .hitarea:hover .fa {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .social-item .fa {
-    width: 2em;
-    padding: .25em 0;
-    display: table-cell;
-    /* font-size: 1em; */
-    color: #369AD9;
-    text-align: #f2f2f2;
-    background: white;
+  width: 2em;
+  padding: 0.25em 0;
+  display: table-cell;
+  /* font-size: 1em; */
+  color: #369ad9;
+  text-align: #f2f2f2;
+  background: white;
 }
 
 .social-item .text {
-    padding: .5em .75em;
-    display: table-cell;
-    font: 700 .9375em "Pragati Narrow", sans-serif;
-    text-align: left;
-    text-transform: uppercase;
+  padding: 0.5em 0.75em;
+  display: table-cell;
+  font: 600 0.75em "PublicSansVariable", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
 #footer {
-    width: 100%;
-    background-color: #369AD9;
+  width: 100%;
+  background-color: #369ad9;
 }
 
 #footer .container {
-    max-width: 1024px;
-    border-top: 1px solid white;
-    margin: 0 auto;
-    padding: 1.5em 3em 3em;
-    overflow: hidden;
+  max-width: 1024px;
+  border-top: 1px solid white;
+  margin: 0 auto;
+  padding: 1.5em 3em 3em;
+  overflow: hidden;
 }
 
 #footer .copyright,
 #footer .menu {
-    width: 49%;
-    margin: 0;
-    color: whitesmoke;
-    display: inline-block;
-    font-size: .8125em;
+  width: 49%;
+  margin: 0;
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 0.8125em;
 }
 
 #footer .copyright {
-    text-align: left;
-    text-transform: uppercase;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 #footer .menu {
-    text-align: right;
+  text-align: right;
 }
 
 #footer .menu a {
-    border: 1px solid whitesmoke;
-    margin-left: .5em;
-    padding: .25em .75em;
-    /*background-color: rgb(180, 188, 190);*/
-    display: inline-block;
-    text-decoration: none;
+  border: 1px solid whitesmoke;
+  margin-left: 0.5em;
+  padding: 0.25em 0.75em;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #footer .menu a:hover {
-    background-color: white;
-    color: rgb(13, 43, 64);
+  background-color: white;
+  color: rgb(13, 43, 64);
 }
