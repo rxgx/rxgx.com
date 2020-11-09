@@ -1,0 +1,29 @@
+{
+  "name": "rxgx-website",
+  "description": "All the codes it takes to run rxgx.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "build": "next build && next export",
+    "dev": "next dev",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxgx/website.git"
+  },
+  "keywords": [],
+  "author": "Ryan Gasparini <ryan@rxgx.com> (http://www.rxgx.com/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rxgx/website/issues"
+  },
+  "homepage": "https://github.com/rxgx/website#readme"
+}

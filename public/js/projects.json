@@ -1,0 +1,9 @@
+{
+  "projects": [
+    {
+      "name": "Best Western CMS",
+      "description": "A single platform to host and create microsites for properties, marketing regions, and promotions",
+      "tags": ["HTML", "CSS", "PHP", "MySQL"]
+    }
+  ]
+}
