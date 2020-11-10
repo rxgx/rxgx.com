@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import AboutPage from '../components/AboutPage'
+import Card from '../components/Card'
 import Footer from '../components/Footer'
 
 function HomePage () {
@@ -29,11 +30,11 @@ function HomePage () {
 
       <article id='body'>
         <div className='section cards'>
-          <div className='card'>
+          <Card>
             Anyone else feel that less and sass are not addressing any of the
             problems with #CSS?
             <a href=''>Why we don't do apps</a>
-          </div>
+          </Card>
 
           <div className='card'>
             Have you heard about responsive design? Of course, we've read the

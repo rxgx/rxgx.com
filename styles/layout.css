@@ -47,29 +47,3 @@
   width: 100%;
   font-size: 0;
 }
-
-.cards .card {
-  width: 32%;
-  min-height: 6.5rem;
-  border: 1px solid lightgray;
-  border-top-width: 10rem;
-  background-color: white;
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: 1rem;
-  font-family: 'PlayfairDisplayVariable';
-  font-weight: 400;
-  margin: 0.5rem 1%;
-  line-height: 1.25rem;
-  padding: 1rem;
-  vertical-align: top;
-}
-
-.cards .card:nth-of-type(2n + 1) {
-  margin-right: 0;
-}
-
-.cards .card a {
-  color: red;
-  display: inline-block;
-}
