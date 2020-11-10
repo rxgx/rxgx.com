@@ -3,6 +3,7 @@ import Link from 'next/link'
 import AboutPage from '../components/AboutPage'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 function HomePage () {
   return (
@@ -19,15 +20,7 @@ function HomePage () {
         <link rel='stylesheet' type='text/css' href='./css/base.css' />
         <link rel='stylesheet' type='text/css' href='./css/style.css' />
       </Head>
-      <header id='header'>
-        <h1 className='container'>
-          <span className='identity'>RXGX</span>
-          <span className='title'>Web Interface Design &amp; Architecture</span>
-          <em className='separator'>by</em>
-          <span className='name'>Ryan Gasparini</span>
-        </h1>
-      </header>
-
+      <Header />
       <article id='body'>
         <div className='section cards'>
           <Card>
