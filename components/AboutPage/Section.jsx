@@ -10,10 +10,10 @@ export function Heading ({ children }) {
 
 export default function Section ({ children, className, id: elementId }) {
   return (
-    <section id={elementId} className={`${className} ${styles.section}`}>
+    <section id={elementId} className={`${className} ${styles.root}`}>
       <a name={elementId} />
 
-      <div className='container'>{children}</div>
+      <div className={styles.container}>{children}</div>
     </section>
   )
 }

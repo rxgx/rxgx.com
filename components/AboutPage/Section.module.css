@@ -16,19 +16,14 @@
   margin: 0 auto;
 }
 
-.content > p,
-.sidebar > p {
+.root .content > p,
+.root .sidebar > p {
   font-size: 0.9375em;
 }
 
-.content > p:first-of-type,
-.sidebar > p:first-of-type {
+.root .content > p:first-of-type,
+.root .sidebar > p:first-of-type {
   margin-top: 0;
-}
-
-.root p:first-of-type::first-letter {
-  font-size: 1.5em;
-  font-weight: bold;
 }
 
 .heading {
