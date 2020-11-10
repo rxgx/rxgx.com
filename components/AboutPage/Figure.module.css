@@ -1,14 +1,14 @@
-#header {
+.root {
   width: 100%;
   background-color: #369ad9;
   display: table;
 }
 
-#header a {
+.root a {
   text-decoration: none;
 }
 
-#header .bubble {
+.root .bubble {
   top: 0em;
   right: -2em;
   width: 6em;
@@ -21,8 +21,8 @@
   z-index: 2;
 }
 
-#header .bubble:after {
-  content: "";
+.root .bubble:after {
+  content: '';
   width: 0;
   height: 0;
   top: 0;
@@ -35,12 +35,12 @@
   z-index: 3;
 }
 
-#header .bubble .icon {
+.root .bubble .icon {
   font-size: 2em;
   line-height: 2em;
 }
 
-#header .container {
+.root .container {
   width: 100%;
   height: 100%;
   padding: 20vh 0;
@@ -49,7 +49,7 @@
   vertical-align: middle;
 }
 
-#header .display {
+.root .display {
   width: 16em;
   height: 16em;
   margin: 0 auto;
@@ -64,7 +64,7 @@
   /* font-size: .75em; */
 }
 
-#header .headline {
+.root .headline {
   margin-top: 1.5rem;
   padding-bottom: 0;
   color: rgb(235, 247, 256);
@@ -73,13 +73,13 @@
 }
 
 @supports (font-variation-settings: normal) {
-  #header .headline {
-    font-family: "PublicSansVariable", sans-serif;
-    font-variation-settings: "wght" 500, "wdth" 50;
+  .root .headline {
+    font-family: 'PublicSansVariable', sans-serif;
+    font-variation-settings: 'wght' 500, 'wdth' 50;
   }
 }
 
-#header .identity {
+.root .identity {
   margin-top: 0.5rem;
   font-weight: 700;
 }
