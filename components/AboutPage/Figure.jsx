@@ -22,7 +22,6 @@ export default function Figure () {
             </div>
           </div>
         </div>
-        <h1 className={styles.headline}>Code for What Works</h1>
       </div>
     </header>
   )

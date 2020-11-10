@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import AboutPage from '../components/AboutPage'
-import Card from '../components/Card'
 import Figure from '../components/AboutPage/Figure'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -20,9 +18,14 @@ function HomePage () {
         />
         <link rel='stylesheet' type='text/css' href='./css/base.css' />
         <link rel='stylesheet' type='text/css' href='./css/style.css' />
+        <meta name='viewport' content='width=device-width' />
+        <link
+          rel='stylesheet'
+          href='https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css'
+        />
       </Head>
-      <Figure />
       <Header />
+      <Figure />
       <AboutPage />
       <Footer />
     </div>
