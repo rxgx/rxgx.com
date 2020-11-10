@@ -1,0 +1,84 @@
+.root {
+  text-align: center;
+}
+
+.resume .container {
+  clear: both;
+  overflow: hidden;
+}
+
+.resume-item .company {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.resume-item .description {
+  margin-top: 1em;
+}
+
+.resume-item .name {
+  margin-top: 0;
+  display: block;
+  font-size: 1.125em;
+}
+
+/* 
+DETAIL
+*/
+
+.detail {
+  width: 45.75%;
+  margin: 2%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 920px) {
+  .detail {
+    width: 95%;
+    box-sizing: border-box;
+  }
+}
+
+.company {
+  border-bottom: 1px solid rgb(154, 213, 256);
+  margin-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+@supports (font-variation-settings: normal) {
+  .company {
+    font-family: 'PublicSansVariable';
+    font-variation-settings: 'wght' 700;
+  }
+}
+
+.detail .content {
+  margin-top: 0;
+  font-size: 0.875em;
+}
+
+.detail .dates {
+  margin-top: 0.5rem;
+  color: dimgray;
+  font-size: 0.75em;
+  line-height: 2rem;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.detail .fa {
+  display: none;
+}
+
+.detail .hyperlink {
+  color: inherit;
+  text-decoration: none;
+}

@@ -22,7 +22,7 @@
 #header .container {
   margin: 3rem 0 2rem;
   font-size: 1.125em;
-  font-family: "Oswald";
+  font-family: 'Oswald';
   text-transform: uppercase;
 }
 
@@ -43,10 +43,6 @@
   text-transform: lowercase;
 }
 
-#header .title {
-  font-weight: 300;
-}
-
 .cards {
   width: 100%;
   font-size: 0;
@@ -63,7 +59,7 @@
   box-sizing: border-box;
   display: inline-block;
   font-size: 1rem;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
 
   line-height: 1.25rem;
   vertical-align: top;
@@ -80,6 +76,6 @@
 
 #footer .copyright {
   color: #666;
-  font: 300 0.75rem "Oswald";
+  font: 300 0.75rem 'Oswald';
   letter-spacing: 1px;
 }
