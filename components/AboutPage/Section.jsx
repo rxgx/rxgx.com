@@ -8,9 +8,9 @@ export function Heading ({ children }) {
   return <h2 className={styles.heading}>{children}</h2>
 }
 
-export default function Section ({ children, id: elementId }) {
+export default function Section ({ children, className, id: elementId }) {
   return (
-    <section id={elementId} className={styles.section}>
+    <section id={elementId} className={`${className} ${styles.section}`}>
       <a name={elementId} />
 
       <div className='container'>{children}</div>

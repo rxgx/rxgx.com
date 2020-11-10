@@ -2,31 +2,6 @@
   text-align: center;
 }
 
-.resume .container {
-  clear: both;
-  overflow: hidden;
-}
-
-.resume-item .company {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.resume-item .description {
-  margin-top: 1em;
-}
-
-.resume-item .name {
-  margin-top: 0;
-  display: block;
-  font-size: 1.125em;
-}
-
-/* 
-DETAIL
-*/
-
 .detail {
   width: 45.75%;
   margin: 2%;
@@ -60,22 +35,18 @@ DETAIL
   }
 }
 
-.detail .content {
+.content {
   margin-top: 0;
   font-size: 0.875em;
 }
 
-.detail .dates {
+.dates {
   margin-top: 0.5rem;
   color: dimgray;
   font-size: 0.75em;
   line-height: 2rem;
   text-transform: uppercase;
   vertical-align: bottom;
-}
-
-.detail .fa {
-  display: none;
 }
 
 .detail .hyperlink {

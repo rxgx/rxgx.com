@@ -3,7 +3,7 @@ import Section, { Headline } from './Section'
 
 export default function Skills () {
   return (
-    <Section id='skills'>
+    <Section className={styles.root} id='skills'>
       <article className={styles.content}>
         <Headline>A dynamic guy for the static&nbsp;quo</Headline>
 
@@ -15,8 +15,8 @@ export default function Skills () {
         </p>
 
         <p>
-          Using ActionScript, he's built software demos for a CAD company and an
-          interactive gallery for Phoenix Art Museum. With PHP, he built his
+          Using ActionScript, he has built software demos for a CAD company and
+          an interactive gallery for Phoenix Art Museum. With PHP, he built his
           first multi-site platform and content management system to serve about
           100 marketing sites for Best Western.
         </p>
@@ -30,7 +30,7 @@ export default function Skills () {
 
         <p>
           Today, he can be found balancing his time between writing JavaScript
-          and trying to get to platinum level in competive Overwatch. Ryan is
+          and trying to get to platinum level in competive Overwatch. Ryan is{' '}
           <a href='#contact'>currently available</a> for contract work or
           full-time employment. The following are an overview of his talents and
           experience.

@@ -2,9 +2,9 @@ import Section, { Headline } from './Section'
 import styles from './Resume.module.css'
 
 export default function Resume () {
-  const { company, detail, hyperlink } = styles
+  const { company, content, dates, detail, hyperlink, root } = styles
   return (
-    <Section id='resume'>
+    <Section className={root} id='resume'>
       <Headline>Featured projects and work&nbsp;experience</Headline>
 
       <div className={detail}>
@@ -14,9 +14,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>October 2019 &ndash; August 2020</h4>
+        <h4 className={dates}>October 2019 &ndash; August 2020</h4>
 
-        <p className='content'>
+        <p className={content}>
           Lead on component library, state management, and React tooling for
           internal consumer product catalog platform. Cross department
           collaboration on servers, databases, and deployments for internal
@@ -32,14 +32,14 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>August 2018 &ndash; August 2019</h4>
+        <h4 className={dates}>August 2018 &ndash; August 2019</h4>
 
-        <p className='content'>
+        <p className={content}>
           Lead frontend developer for React single page app deployed to the{' '}
           <a href='https://zeit.co/now'>Now</a> service via continuous
-          integration through
-          <a href='https://circleci.com'>CircleCI</a> v2.1 workflows with Orbs.
-          Data discovery and introspection via Apollo GraphQL client and server.
+          integration through <a href='https://circleci.com'>CircleCI</a> v2.1
+          workflows with Orbs. Data discovery and introspection via Apollo
+          GraphQL client and server.
         </p>
       </div>
 
@@ -50,9 +50,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>December 2017 &ndash; July 2018</h4>
+        <h4 className={dates}>December 2017 &ndash; July 2018</h4>
 
-        <p className='content'>
+        <p className={content}>
           Contributor to creation of Grateful.co website (React, GraphQL) as
           well as architecture and structure (NodeJS, Express, AWS DynamoDB, AWS
           Step Functions, AWS Lambda) for financial dashboard.
@@ -66,9 +66,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>July 2015 &ndash; October 2017</h4>
+        <h4 className={dates}>July 2015 &ndash; October 2017</h4>
 
-        <p className='content'>
+        <p className={content}>
           Entered as software engineer but progressed into product manager role.
           Contributed on NodeJS microservices as well as the React + Redux +
           Immutable app for a browser-based financial analytics application.
@@ -82,9 +82,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>June 2013 &ndash; March 2014</h4>
+        <h4 className={dates}>June 2013 &ndash; March 2014</h4>
 
-        <p className='content'>
+        <p className={content}>
           Rebuilt an <span className='hashtag'>AngularJS</span> SEO ranking
           dashboard with <span className='hashtag'>EmberJS</span>. Dashboard was
           optimized to render for more devices, increase amount of displayed
@@ -99,9 +99,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>November 2012 &ndash; June 2013</h4>
+        <h4 className={dates}>November 2012 &ndash; June 2013</h4>
 
-        <p className='content'>
+        <p className={content}>
           Contributed to building an Acrobat-like document viewer and document
           management tool for users of Fortune 500 companies. Authored many
           services in vanilla JavaScript as well as
@@ -116,9 +116,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>January 2012 &ndash; October 2012</h4>
+        <h4 className={dates}>January 2012 &ndash; October 2012</h4>
 
-        <p className='content'>
+        <p className={content}>
           Lead a transition to a product-based business for professional
           recruiting company. Combined existing
           <span className='hashtag'>PHP</span> sites and
@@ -135,9 +135,9 @@ export default function Resume () {
           </a>
         </h3>
 
-        <h4 className='dates'>December 2010 &ndash; September 2011</h4>
+        <h4 className={dates}>December 2010 &ndash; September 2011</h4>
 
-        <p className='content'>
+        <p className={content}>
           Lead effort to convert an enterprise multimedia library from Flash to{' '}
           <span className='hashtag'>HTML5</span>. Completed prototype with
           multi-layout, drag and drop interface. Implemented a JavaScript

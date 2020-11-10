@@ -20,9 +20,15 @@ SIZE GUIDE
 */
 
 @font-face {
-  font-family: "PublicSansVariable";
+  font-family: 'PlayfairDisplayVariable';
+  font-weight: 400 900;
+  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PublicSansVariable';
   font-weight: 1 999;
-  src: url("/fonts/PublicSans-Roman-VF.ttf") format("truetype");
+  src: url('/fonts/PublicSans-Roman-VF.ttf') format('truetype');
 }
 
 html,
@@ -36,8 +42,8 @@ body {
 
 html {
   font: normal 100%/1.5em sans-serif;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
 }
 

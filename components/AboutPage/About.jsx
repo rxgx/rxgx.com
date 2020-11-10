@@ -11,16 +11,16 @@ export default function About () {
         </figure>
 
         <p className={styles.intro}>
-          Meet Ryan Gasparini. He's a<strong>Front-end Developer</strong>,
-          <strong>Interface Designer</strong>, and
+          Meet Ryan Gasparini. He's a <strong>Frontend Developer</strong>,{' '}
+          <strong>Interface Designer</strong>, and{' '}
           <strong>Software Engineer</strong> from Portland, OR.
         </p>
 
         <p className={sectionStyles.note}>
-          The above picture is taken in Downtown Phoenix where Ryan is
+          The above picture is taken in Downtown Phoenix where Ryan is{' '}
           <a href='https://www.goruck.com/apparel/tops/' title='GoRuck apparel'>
             showing support
-          </a>
+          </a>{' '}
           for all those currently deployed.
         </p>
       </aside>
@@ -33,7 +33,7 @@ export default function About () {
           child he made various drawings of cars and trucks on napkins,
           placemats, and notebooks. In high school, he elected to take classes
           in manual and computer-aided drafting. His passion and skill for
-          drawing and drafting earned him many
+          drawing and drafting earned him many{' '}
           <a href='http://www.mites.cc/'>regional awards</a> in Mechanical
           Drawing.
         </p>
