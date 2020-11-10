@@ -1,0 +1,87 @@
+@media screen and (max-width: 920px) {
+    body {
+        font-size: .875em;
+    }
+
+    .detail {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .list-item {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    .skill {
+        font-size: .875rem;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: .75em;
+    }
+
+    #header .display {
+        font-size: .6875em;
+    }
+
+    .section {
+        padding: 3em 1.5em;
+    }
+
+    #about .content,
+    #about .sidebar,
+    #skills .content,
+    #skills .skills {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+
+    #about .sidebar {
+        width: 75%;
+        margin: 0 auto 3em;
+        text-align: center;
+    }
+
+    #about .photo {
+        width: 50%;
+    }
+
+    #about .note {
+        clear: left;
+    }
+
+    .skill {
+        width: 100%;
+        display: block;
+        font-size: .75rem;
+    }
+
+    .social-items {
+        font-size: .5em;
+        text-align: center;
+    }
+
+    #contact,
+    #resume {
+        text-align: left;
+    }
+
+    .footer .copyright,
+    .footer .menu {
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .footer .menu a {
+        margin: .5em;
+    }
+}

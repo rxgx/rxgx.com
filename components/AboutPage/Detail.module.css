@@ -1,0 +1,47 @@
+.detail {
+  width: 45.75%;
+  margin: 2%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.detail .company {
+    border-bottom: 1px solid rgb(154, 213, 256);
+    text-transform: uppercase;
+}
+
+.detail .content {
+  margin-top: 0;
+  font-size: 0.875em;
+}
+
+.detail .dates {
+  margin-top: 0.5rem;
+  color: dimgray;
+  font-size: 0.75em;
+  line-height: 2rem;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.detail .fa {
+  display: none;
+}
+
+.detail .name {
+  margin-right: 0.5em;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+
+@supports (font-variation-settings: normal) {
+  .detail .name {
+    font-family: "PublicSansVariable";
+    font-variation-settings: "wght" 700;
+  }
+}
