@@ -49,9 +49,14 @@
   vertical-align: bottom;
 }
 
+.detail .hashtag {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
 .detail .hyperlink {
   color: inherit;
-  text-decoration-color: lightgray; /*rgb(154, 213, 256);*/
+  text-decoration-color: #444; /*rgb(154, 213, 256);*/
   text-decoration-skip: inherit;
   text-decoration-thickness: 0.25em;
 }
