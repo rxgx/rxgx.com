@@ -20,6 +20,12 @@ SIZE GUIDE
 */
 
 @font-face {
+  font-family: 'OswaldVariable';
+  font-weight: 200 700;
+  src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'PlayfairDisplayVariable';
   font-weight: 400 900;
   src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');

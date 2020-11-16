@@ -1,6 +1,6 @@
 .root {
   width: 100%;
-  background-color: #369ad9;
+  background-color: #d2d9de;
   display: table;
 }
 
@@ -27,7 +27,7 @@
   height: 0;
   top: 0;
   left: 2.5em;
-  border-bottom: 3em solid transparent;
+  border-bottom: 2em solid transparent;
   border-left: 1.125em solid #f2bb13;
   border-right: 1em solid transparent;
   display: block;
@@ -43,22 +43,22 @@
 .root .container {
   width: 100%;
   height: 100%;
-  padding: 20vh 0;
+  padding: 12vh 0;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
 .root .display {
-  width: 16em;
-  height: 16em;
+  width: 15em;
+  height: 15em;
   margin: 0 auto;
   border-bottom: 0;
-  border-radius: 20%;
+  border-radius: 15%;
   display: block;
   overflow: hidden;
   padding: 2.5em 0 0 0;
-  background: #f24444;
+  background-color: #242424;
   box-sizing: border-box;
   position: relative;
   /* font-size: .75em; */
@@ -85,7 +85,7 @@
 }
 
 .browser {
-  bottom: -2em;
+  bottom: -3em;
   left: 50%;
   width: 70%;
   margin-left: -35%;

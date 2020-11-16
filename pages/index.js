@@ -11,11 +11,6 @@ function HomePage () {
         <title>
           RXGX - Web Interface Design &amp; Architecture by Ryan Gasparini
         </title>
-        <link
-          href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Playfair+Display:400,700,900'
-          rel='stylesheet'
-          type='text/css'
-        />
         <link rel='stylesheet' type='text/css' href='./css/base.css' />
         <link rel='stylesheet' type='text/css' href='./css/style.css' />
         <meta name='viewport' content='width=device-width' />

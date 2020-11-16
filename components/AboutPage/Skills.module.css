@@ -25,15 +25,15 @@
 
 .skill .name {
   border-bottom: 1px solid rgb(154, 213, 256);
-  font-size: 0.875em;
+  font-size: 0.9375em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 @supports (font-variation-settings: normal) {
   .skill .name {
-    font-family: 'PublicSansVariable';
-    font-variation-settings: 'wght' 700;
+    font-family: 'OswaldVariable';
+    font-variation-settings: 'wght' 400;
   }
 }
 
