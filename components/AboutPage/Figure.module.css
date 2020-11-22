@@ -1,14 +1,14 @@
-#header {
+.root {
   width: 100%;
-  background-color: #369ad9;
+  background-color: #d2d9de;
   display: table;
 }
 
-#header a {
+.root a {
   text-decoration: none;
 }
 
-#header .bubble {
+.root .bubble {
   top: 0em;
   right: -2em;
   width: 6em;
@@ -21,13 +21,13 @@
   z-index: 2;
 }
 
-#header .bubble:after {
-  content: "";
+.root .bubble:after {
+  content: '';
   width: 0;
   height: 0;
   top: 0;
   left: 2.5em;
-  border-bottom: 3em solid transparent;
+  border-bottom: 2em solid transparent;
   border-left: 1.125em solid #f2bb13;
   border-right: 1em solid transparent;
   display: block;
@@ -35,36 +35,35 @@
   z-index: 3;
 }
 
-#header .bubble .icon {
+.root .bubble .icon {
   font-size: 2em;
   line-height: 2em;
 }
 
-#header .container {
+.root .container {
   width: 100%;
   height: 100%;
-  padding: 20vh 0;
+  padding: 12vh 0;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
-#header .display {
-  width: 16em;
-  height: 16em;
+.root .display {
+  width: 15em;
+  height: 15em;
   margin: 0 auto;
   border-bottom: 0;
-  border-radius: 20%;
+  border-radius: 1.5em;
   display: block;
   overflow: hidden;
   padding: 2.5em 0 0 0;
-  background: #f24444;
+  background-color: #242424;
   box-sizing: border-box;
   position: relative;
-  /* font-size: .75em; */
 }
 
-#header .headline {
+.root .headline {
   margin-top: 1.5rem;
   padding-bottom: 0;
   color: rgb(235, 247, 256);
@@ -73,19 +72,19 @@
 }
 
 @supports (font-variation-settings: normal) {
-  #header .headline {
-    font-family: "PublicSansVariable", sans-serif;
-    font-variation-settings: "wght" 500, "wdth" 50;
+  .root .headline {
+    font-family: 'PublicSansVariable', sans-serif;
+    font-variation-settings: 'wght' 500, 'wdth' 50;
   }
 }
 
-#header .identity {
+.root .identity {
   margin-top: 0.5rem;
   font-weight: 700;
 }
 
 .browser {
-  bottom: -2em;
+  bottom: -3em;
   left: 50%;
   width: 70%;
   margin-left: -35%;
@@ -112,8 +111,8 @@
 .browser .menubar .button {
   width: 0.5em;
   height: 0.5em;
-  margin: 0.25em 0 0 0.125em;
-  background-color: #f2f2f2;
+  margin: 0.25em 0.25em 0 0;
+  background-color: white;
   border-radius: 0.375em;
   display: inline-block;
 }
@@ -122,7 +121,7 @@
   width: 100%;
   height: 9em;
   padding: 0.5em 1.25em;
-  background-color: #f2f2f2;
+  background-color: white;
   box-sizing: border-box;
   overflow: hidden;
 }

@@ -1,0 +1,88 @@
+.root {
+  text-align: center;
+}
+
+.detail {
+  width: 45.75%;
+  border: 1px solid lightgray;
+  margin: 2%;
+  padding: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 920px) {
+  .detail {
+    width: 95%;
+    box-sizing: border-box;
+  }
+}
+
+.detail .company {
+  margin-right: 0.5em;
+  font-size: 1.125em;
+  line-height: 1em;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+@supports (font-variation-settings: normal) {
+  .detail .company {
+    font-family: 'PlayfairDisplayVariable';
+    font-variation-settings: 'wght' 700;
+  }
+}
+
+.content {
+  margin-top: 0;
+  font-size: 0.875em;
+}
+
+.detail .dates {
+  margin-top: 0.5rem;
+  color: dimgray;
+  font-size: 0.75em;
+  line-height: 2rem;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+.detail .hashtag {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.detail .hyperlink {
+  color: inherit;
+  text-decoration-color: #444; /*rgb(154, 213, 256);*/
+  text-decoration-skip: inherit;
+  text-decoration-thickness: 0.25em;
+}
+
+.card {
+  width: 32%;
+  min-height: 6.5rem;
+  border: 1px solid lightgray;
+  border-top-width: 10rem;
+  background-color: white;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'PlayfairDisplayVariable';
+  font-weight: 400;
+  margin: 0.5rem 1%;
+  line-height: 1.25rem;
+  padding: 1rem;
+  vertical-align: top;
+}
+
+.card:nth-of-type(2n + 1) {
+  margin-right: 0;
+}
+
+.card a {
+  color: red;
+  display: inline-block;
+}

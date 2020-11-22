@@ -1,0 +1,59 @@
+.root {
+  background-color: #369ad9;
+  text-align: center;
+}
+
+.root h1 {
+  color: white;
+}
+
+.items {
+  margin: 1.5em auto 0;
+}
+
+.item {
+  min-width: 15%;
+  margin: 1.5em 0 0 0.75em;
+  display: inline-block;
+}
+
+.item:first-of-type {
+  margin-left: 0;
+}
+
+.item .hitarea {
+  width: 100%;
+  border: 1px solid white;
+  color: white;
+  display: table;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.item .hitarea:hover {
+  background-color: white;
+  color: black;
+}
+
+.item .hitarea:hover .fa {
+  background-color: black;
+  color: white;
+}
+
+.item .fa {
+  width: 2em;
+  padding: 0.25em 0;
+  display: table-cell;
+  /* font-size: 1em; */
+  color: #369ad9;
+  text-align: #f2f2f2;
+  background: white;
+}
+
+.item .text {
+  padding: 0.5em 0.75em;
+  display: table-cell;
+  font: 600 0.75em 'PublicSansVariable', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+}

@@ -1,0 +1,56 @@
+body {
+  margin-bottom: 0;
+  font-size: 0.75em;
+}
+
+.print-page-break,
+.print-only {
+  display: inherit;
+}
+
+a.print-only,
+span.print-only,
+strong.print-only {
+  display: inline;
+}
+
+.print-page-break {
+  padding-top: 1.5em;
+  page-break-before: always;
+}
+
+#content > .container,
+#footer > .container,
+#header > .container {
+  width: auto;
+  margin-top: 1.5em;
+  padding: 0;
+}
+
+.header .contact {
+  display: block;
+  line-height: 2.5em;
+}
+
+.header .identity {
+  line-height: 2.5em;
+}
+
+.header .identity a {
+  font-size: 2.5em;
+}
+
+#contact,
+#footer,
+#header .menu {
+  display: none;
+}
+
+#content .section {
+  margin-top: 1.5em;
+  padding-top: 3em;
+}
+
+.section .headline {
+  font-size: 1.5em;
+}

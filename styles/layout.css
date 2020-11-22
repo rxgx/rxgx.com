@@ -1,0 +1,20 @@
+#__next {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#layout {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  padding: 4em;
+  overflow: hidden;
+}
+
+.cards {
+  width: 100%;
+  font-size: 0;
+}

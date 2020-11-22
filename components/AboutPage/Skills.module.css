@@ -1,0 +1,45 @@
+.root {
+  border-top: 1px solid rgb(154, 213, 256);
+  border-bottom: 1px solid rgb(154, 213, 256);
+  background-color: rgb(204, 234, 255);
+}
+
+.content {
+  width: 50%;
+  float: left;
+}
+
+.skills {
+  width: 45%;
+  float: right;
+}
+
+.skill {
+  width: 50%;
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skill .name {
+  border-bottom: 1px solid rgb(154, 213, 256);
+  font-size: 0.9375em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@supports (font-variation-settings: normal) {
+  .skill .name {
+    font-family: 'OswaldVariable';
+    font-variation-settings: 'wght' 400;
+  }
+}
+
+.excerpt {
+  margin-top: 0.5em;
+  color: rgb(49, 139, 203);
+  font-size: 0.875em;
+  line-height: 1.75em;
+}
